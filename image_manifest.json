@@ -1,0 +1,65 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "status": "success",
+      "filename": "hero-banner-capacita-event.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuislicaica/hero-banner-capacita-event.png",
+      "path": "assets/images/hero-banner-capacita-event.png",
+      "absolute_path": "/workspace/assets/images/hero-banner-capacita-event.png"
+    },
+    {
+      "status": "success",
+      "filename": "event-training-seminar.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuisyacaiaq/event-training-seminar.png",
+      "path": "assets/images/event-training-seminar.png",
+      "absolute_path": "/workspace/assets/images/event-training-seminar.png"
+    },
+    {
+      "status": "success",
+      "filename": "consultant-male-portrait.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuitfacaiaa/consultant-male-portrait.png",
+      "path": "assets/images/consultant-male-portrait.png",
+      "absolute_path": "/workspace/assets/images/consultant-male-portrait.png"
+    },
+    {
+      "status": "success",
+      "filename": "consultant-female-portrait.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuitrycaiba/consultant-female-portrait.png",
+      "path": "assets/images/consultant-female-portrait.png",
+      "absolute_path": "/workspace/assets/images/consultant-female-portrait.png"
+    },
+    {
+      "status": "success",
+      "filename": "abrasel-building-exterior.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuit6qcaiaq/abrasel-building-exterior.png",
+      "path": "assets/images/abrasel-building-exterior.png",
+      "absolute_path": "/workspace/assets/images/abrasel-building-exterior.png"
+    },
+    {
+      "status": "success",
+      "filename": "networking-event-professionals.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuiulqcaiaa/networking-event-professionals.png",
+      "path": "assets/images/networking-event-professionals.png",
+      "absolute_path": "/workspace/assets/images/networking-event-professionals.png"
+    },
+    {
+      "status": "success",
+      "filename": "abrasel-networking-training-event.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2eycqcaieq/abrasel-networking-training-event.png",
+      "path": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2eycqcaieq/abrasel-networking-training-event.png",
+      "absolute_path": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2eycqcaieq/abrasel-networking-training-event.png"
+    },
+    {
+      "status": "success",
+      "filename": "partner-section-hero-speaker.jpg",
+      "url": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2hs2icaifa/partner-section-hero-speaker.png",
+      "path": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2hs2icaifa/partner-section-hero-speaker.png",
+      "absolute_path": "https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2hs2icaifa/partner-section-hero-speaker.png"
+    }
+  ],
+  "success_count": 8,
+  "failed_count": 0,
+  "running_count": 0,
+  "message": "Generated 8/8 images total"
+}

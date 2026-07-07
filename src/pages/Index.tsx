@@ -161,7 +161,7 @@ const Index = () => {
                 key={event.id}
                 className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className={`px-5 py-3 ${event.id === 'julho' ? 'bg-[#737373]' : 'bg-gray-300'}`}>
+                <div className={`px-5 py-3 ${event.id === 'julho' ? 'bg-[#1B4332]' : 'bg-[#737373]-300'}`}>
                   <h4 className="text-white font-bold text-sm uppercase tracking-wide">{event.month}</h4>
                 </div>
                 <div className="p-5">

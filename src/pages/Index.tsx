@@ -173,7 +173,7 @@ const Index = () => {
                   <div className="space-y-1 mb-3 min-h-[40px]">
                     {event.themes.map((theme, i) => (
                       <p key={i} className="text-gray-600 text-xs leading-tight">
-                        {theme.title !== 'Em breve' ? `${i + 1}. ${theme.title}` : ''}
+                       {event.id === 'julho' && theme.title === 'Em breve' ? 'Definindo tema...' : theme.title !== 'Em breve' ? `${i + 1}. ${theme.title}` : ''}
                       </p>
                     ))}
                   </div>

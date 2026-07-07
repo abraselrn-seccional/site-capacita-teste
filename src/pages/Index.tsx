@@ -178,12 +178,12 @@ const Index = () => {
                     ))}
                   </div>
                   <span
-                    className={`text-xs font-bold uppercase px-2 py-1 rounded-full ${
-                         event.id === 'junho'
-                          ? 'bg-red-100 text-red-700'
-                          : event.id === 'julho'
-                          ? 'bg-green-100 text-green-700'
-                          : 'bg-gray-100 text-gray-700'
+                    className={`text-xs font-bold uppercase px-2 py-1 rounded-full whitespace-nowrap ${
+                          event.id === 'junho'
+                             ? 'bg-red-100 text-red-700'
+                             : event.id === 'julho'
+                             ? 'bg-green-100 text-green-700'
+                             : 'bg-orange-100 text-orange-700'
                     }`}
                   >
                     {event.id === 'junho'

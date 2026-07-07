@@ -179,12 +179,18 @@ const Index = () => {
                   </div>
                   <span
                     className={`text-xs font-bold uppercase px-2 py-1 rounded-full ${
-                      event.status === 'published'
-                        ? 'bg-green-100 text-green-700'
-                        : 'bg-orange-100 text-orange-700'
+                         event.id === 'junho'
+                          ? 'bg-red-100 text-red-700'
+                          : event.id === 'julho'
+                          ? 'bg-green-100 text-green-700'
+                          : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    {event.status === 'published' ? 'Inscrições Abertas' : 'Em Breve'}
+                    {event.id === 'junho'
+                        ? 'Inscrições Encerradas'
+                        : event.id === 'julho'
+                        ? 'Inscrições Abertas'
+                        : 'Em Breve'}
                   </span>
                   <Link
                     to={`/evento/${event.id}`}

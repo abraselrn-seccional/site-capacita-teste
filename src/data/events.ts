@@ -92,7 +92,7 @@ export const eventsData: MonthEvent[] = [
       'Aplicações práticas da IA para melhorar processos, comunicação, atendimento e tomada de decisões.',
       'Como utilizar ferramentas de IA para criar estratégias mais eficientes e potencializar os resultados do restaurante.',
       'Práticas para tornar o negócio mais inovador, competitivo e preparado para o futuro.',
-      ]
+      ],
    
     consultants: [
       {

@@ -192,12 +192,20 @@ const Index = () => {
                         ? 'Inscrições Abertas'
                         : 'Em Breve'}
                   </span>
-                  <Link
-                    to={`/evento/${event.id}`}
-                    className="mt-4 flex items-center gap-1 text-[#1B4332] font-semibold text-sm hover:text-[#F97316] transition-colors"
-                  >
-                    Ver Detalhes <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
+                 
+                {event.id === 'junho' ? (
+                    <span className="mt-4 flex items-center gap-1 text-gray-400 font-semibold text-sm">
+                    Evento Encerrado
+                 </span>
+              ) : (
+              <Link
+                to={`/evento/${event.id}`}
+                className="mt-4 flex items-center gap-1 text-[#1B4332] font-semibold text-sm hover:text-[#F97316] transition-colors"
+              >
+                Ver Detalhes <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              )}
+
                 </div>
               </div>
             ))}

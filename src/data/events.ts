@@ -76,7 +76,7 @@ export const eventsData: MonthEvent[] = [
     dayOfWeek: 'TERÇA-FEIRA',
     time: '18h30 às 20h00',
     location: 'Sebrae',
-    locationDetail: 'Auditório Sebrae',
+    locationDetail: 'Sala 5',
     status: 'published',
     themes: [
       { title: 'Crédito não é Vilão'},
@@ -131,8 +131,8 @@ export const eventsData: MonthEvent[] = [
     dayOfWeek: 'TERÇA-FEIRA',
     time: '18h30 às 20h00',
     location: 'Sebrae RN',
-    locationDetail: 'Auditório Sebrae',
-    status: 'coming_soon',
+    locationDetail: 'Sala 5',
+    status: 'published',
     themes: [
       { title: 'O Ingrediente Invisível',
        description: 'O maior patrimônio comercial de um restaurante é a base de clientes que ele já conquistou — e que ainda não aprendeu a usar.'},

@@ -79,8 +79,8 @@ export const eventsData: MonthEvent[] = [
     locationDetail: 'Auditório Sebrae',
     status: 'published',
     themes: [
-      { title: 'O Ingrediente Invisível', description: 'Entenda por que a base de clientes é um dos maiores patrimônios do seu restaurante.'},
-      { title: 'IA à La Carte: um menu de possibilidades para bares e restaurantes:', description: 'Descubra como a Inteligência Artificial pode impulsionar suas vendas, fortalecer seu marketing e otimizar a gestão do seu negócio.' },
+      { title: 'Crédito não é Vilão'},
+      { title: 'Gestão inteligente no iFood: Aumente vendas e lucratividade no delivery'},
     ],
     about: 'O encontro de Julho do Abrasel Capacita reunirá estratégias para transformar relacionamento, dados e tecnologia em oportunidades de crescimento para os negócios de alimentação fora do lar.\n\nNa palestra \"O Ingrediente Invisível\", os participantes descobrirão como a base de clientes pode se tornar um dos maiores patrimônios comerciais do restaurante, utilizando dados, relacionamento e CRM para fortalecer a fidelização, aumentar a recorrência e gerar novas oportunidades de vendas.\n\nJá na palestra \"IA à La Carte: um menu de possibilidades para bares e restaurantes\", serão apresentadas formas práticas de aplicar a Inteligência Artificial no dia a dia do negócio, utilizando a tecnologia para otimizar o marketing, o atendimento, as vendas e a gestão, tornando os processos mais eficientes e ampliando as oportunidades de crescimento.\n\nCom uma abordagem prática e focada na realidade do setor, o encontro trará conteúdos aplicáveis, exemplos reais e ferramentas que poderão ser implementadas imediatamente, fortalecendo o relacionamento com os clientes e impulsionando os resultados dos negócios."',
     learningTopics: [ 

@@ -172,9 +172,12 @@ export const eventsData: MonthEvent[] = [
       { time: '20h00', activity: 'Encerramento' },
     ],
     partners: [
-      {'Adeycson Siebra\nEspecialista em CRM e Soluções Digitais', logo: '/assets/consultants/adeycson-siebra.jpeg'},
-      {'Erick Belo\nConsultor do Sebrae em Marketing e Vendas', logo: '/assets/consultants/erick-belo.jpeg'},
-    ],
+  { name: 'Adeycson Siebra\nEspecialista em CRM e Soluções Digitais', logo: 
+    '/assets/consultants/adeycson-siebra.jpeg' },
+  { name: 'Erick Belo\nConsultor do Sebrae em Marketing e Vendas', logo: 
+    '/assets/consultants/erick-belo.jpeg' },
+],
+
     partnerStatus:'closed',
     registrationLink: '#', 
   },

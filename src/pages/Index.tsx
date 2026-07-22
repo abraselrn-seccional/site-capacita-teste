@@ -12,7 +12,7 @@ const benefits = [
   { icon: CheckCircle, title: 'Mais Resultados', desc: 'Aumento real de faturamento' },
 ];
 
-const nextEvent = eventsData.find((e) => e.status === 'published');
+const nextEvent = eventsData.find((e) => e.id === 'julho');
 
 const Index = () => {
   return (

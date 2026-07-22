@@ -50,12 +50,14 @@ export default defineConfig(({ command }) => {
       react(),
       atoms(),
       ensureBuildOutDir(),
-      Sitemap({
-        hostname: 'https://atoms.template.com',
-        lastmod: getSitemapLastmod(),
-        readable: true,
-        // generateRobotsTxt: true,
-      }),
+    
+// Sitemap({
+//   hostname: 'https://atoms.template.com',
+//   lastmod: getSitemapLastmod(),
+//   readable: true,
+//   generateRobotsTxt: true,
+// }),
+
       ...(blogPrerenderRoutes.length > 0
         ? vitePrerenderPlugin({
             renderTarget: '#root',

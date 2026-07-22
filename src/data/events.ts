@@ -70,9 +70,9 @@ export const CONTACT_INFO = {
 
 export const eventsData: MonthEvent[] = [
   {
-    id: 'julho',
-    month: 'Julho',
-    date: '28/07',
+    id: 'junho',
+    month: 'Junho',
+    date: '30/06',
     dayOfWeek: 'TERÇA-FEIRA',
     time: '18h30 às 20h00',
     location: 'Sebrae',

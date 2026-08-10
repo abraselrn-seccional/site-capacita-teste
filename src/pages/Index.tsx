@@ -181,7 +181,7 @@ const Index = () => {
                     className={`text-xs font-bold uppercase px-2 py-1 rounded-full whitespace-nowrap ${
                           event.id === 'junho'
                              ? 'bg-red-100 text-red-700'
-                             : event.id === 'julho'
+                             : event.id === 'agosto'
                              ? 'bg-green-100 text-green-700'
                              : 'bg-orange-100 text-orange-700'
                     }`}
@@ -189,6 +189,8 @@ const Index = () => {
                     {event.id === 'junho'
                         ? 'Inscrições Encerradas'
                         : event.id === 'julho'
+                        ? 'Inscrições Encerradas'
+                        : event.id === 'agosto'
                         ? 'Inscrições Abertas'
                         : 'Em Breve'}
                   </span>

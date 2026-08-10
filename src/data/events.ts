@@ -195,7 +195,7 @@ export const eventsData: MonthEvent[] = [
     ],
     about: '',
     learningTopics: [],
-    consultants: [],
+    consultants: ['Grupo Métodos'],
     schedule: [],
     partners: [
       { name: '', logo: '' },

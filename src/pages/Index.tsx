@@ -9,10 +9,11 @@ const benefits = [
   { icon: Handshake, title: 'Networking', desc: 'Conexão com outros empresários do setor' },
   { icon: Star, title: 'Estratégias Aplicáveis', desc: 'Técnicas comprovadas de gestão' },
   { icon: Users, title: 'Mais Gestão', desc: 'Ferramentas para otimizar operações' },
+  
   { icon: CheckCircle, title: 'Mais Resultados', desc: 'Aumento real de faturamento' },
 ];
 
-const nextEvent = eventsData.find((e) => e.id === 'julho');
+const nextEvent = eventsData.find((e) => e.id === 'agosto');
 
 const Index = () => {
   return (

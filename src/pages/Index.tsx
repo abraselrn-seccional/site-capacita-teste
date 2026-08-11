@@ -24,7 +24,7 @@ const Index = () => {
       <section className="relative min-h-[90vh] flex items-center bg-[#1B4332] pt-20">
         <div className="absolute inset-0 bg-gradient-to-r from-[#1B4332] via-[#1B4332]/95 to-[#1B4332]/70 z-10" />
         <img
-          src="https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuislicaica/hero-banner-capacita-event.png"
+          src="/ativos/banner-julho.jpg.png"
           alt="Abrasel Capacita"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />

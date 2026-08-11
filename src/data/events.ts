@@ -198,11 +198,11 @@ export const eventsData: MonthEvent[] = [
     consultants: [
       {
       name: 'Grupo Métodos',
-      role: 'Palestrante convidado' 
+      role: 'Palestrante convidado', 
       photo: '',
       bio: '',
   },
-   ]
+   ],
     schedule: [],
     partners: [
       { name: '', logo: '' },

@@ -22,7 +22,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-[#1B4332] pt-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1B4332] via-[#1B4332]/95 to-[#1B4332]/70 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B4332]/85 via-[#1B4332]/75 to-[#1B4332]/55 z-10" />
         <img
           src="/assets/banner-julho.jpg.png"
           alt="Abrasel Capacita"

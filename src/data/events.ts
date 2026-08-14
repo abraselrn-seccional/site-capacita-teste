@@ -191,7 +191,9 @@ export const eventsData: MonthEvent[] = [
     locationDetail: '',
     status: 'coming_soon',
     themes: [
-      { title: 'Reforma Tributária'},
+      { title: 'Reforma Tributária',
+       description: 'Novo Sistema Tributário: O que muda para quem alimenta o Brasil'
+      }
     ],
     about: '',
     learningTopics: [],

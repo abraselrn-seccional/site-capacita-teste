@@ -92,10 +92,17 @@ const Index = () => {
                   </div>
                   <div className="space-y-2 mb-4">
                     {nextEvent.themes.map((theme, i) => (
-                      <h3 key={i} className="text-xl md:text-2xl font-bold text-[#1B4332]">
+                      <div key={i}>
+                        <h3 className="text-xl md:text-2xl font-bold text-[#1B4332]">
                         {i + 1}. {theme.title}
-                      </h3>
-                    ))}
+                        </h3>
+                        {theme.description && (
+                        <p className="text-sm md:text-base text-gray-600 mt-1">
+                          {theme.description}
+                          </p>
+                           )}
+                          </div>
+                        ))}
                   </div>
                   <div className="space-y-3 mb-8">
                     <div className="flex items-center gap-3 text-gray-700">

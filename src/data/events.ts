@@ -189,7 +189,7 @@ registrationLink: '#',
   {
     name: 'Priscila Mesquita, Jéssica Roberta e Marana Pontes',
     role: 'Especialistas do Grupo Métodos',
-    photo: '/assets/consultants/GRUPO MÉTODO.PNG',
+    photo: '/assets/consultants/grupo-metodo.png',
     bio: 'Profissionais da área contábil e tributária do Grupo Método, atuam no acompanhamento de empresas e na orientação sobre temas relacionados à gestão fiscal, tributária e financeira. No Abrasel Capacita, compartilharão informações sobre a Reforma Tributária e os impactos das novas regras para bares, restaurantes e negócios de alimentação fora do lar.',
   },
 ],
@@ -202,7 +202,7 @@ registrationLink: '#',
     ],
     partners: [
   { name: 'Grupo Métodos', 
-    logo:'/assets/consultants/GRUPO MÉTODO.PNG'},
+    logo:'/assets/consultants/grupo-metodo.png'},
 ],
 
     partnerStatus:'closed',

@@ -164,40 +164,8 @@ export const eventsData: MonthEvent[] = [
 ],
 
     partnerStatus:'closed',
-    registrationLink: '#', 
-  },
-  {
-    id: 'agosto',
-    month: 'Agosto',
-    date: '26/08',
-    dayOfWeek: 'QUARTA-FEIRA',
-    time: '18h30 às 20h00',
-    location: 'Sebrae RN',
-    locationDetail: '',
-    status: 'coming_soon',
-    themes: [
-      { title: 'Reforma Tributária',
-       description: 'Novo Sistema Tributário: O que muda para quem alimenta o Brasil'
-      }
-    ],
-    about: '',
-    learningTopics: [],
-    consultants: [
-      {
-      name: 'Grupo Métodos',
-      role: 'Palestrante convidado', 
-      photo: '',
-      bio: '',
-  },
-   ],
-    schedule: [],
-    partners: [
-      { name: '', logo: '' },
-      { name: '', logo: '' },
-    ],
-    partnerStatus: '2_available',
     registrationLink: '#',
-  },
+  }
   {
     id: 'setembro',
     month: 'Setembro',

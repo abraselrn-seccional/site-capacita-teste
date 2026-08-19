@@ -250,9 +250,9 @@ const EventDetails = () => {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1B4332] uppercase mb-8">
-            Consultores
+            Consultor
           </h2>
-          <div className="grid sm:grid-cols-2 gap-8">
+          <div className="flex justify-center">
             {event.consultants.map((consultant) => (
               <div key={consultant.name} className="text-center">
                 <img

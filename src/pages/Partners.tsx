@@ -83,7 +83,7 @@ const Partners = () => {
 
                     {/* Partner Slots */}
                     <div className="space-y-3 mb-4">
-                         <>
+                         <div className="flex items-center gap-3
                         {partner1Filled ? (
                           <>
                             <img

@@ -146,8 +146,8 @@ export const eventsData: MonthEvent[] = [
     consultants: [
   {
     name: 'Priscila Mesquita, Jéssica Roberta e Marana Pontes',
-    role: 'Especialistas do Grupo Método',
-    photo: '/assets/consultants/adeycson-siebra.jpeg',
+    role: 'Especialistas do Grupo Métodos',
+    photo: '/assets/consultants/GRUPO MÉTODO.PNG',
     bio: 'Profissionais da área contábil e tributária do Grupo Método, atuam no acompanhamento de empresas e na orientação sobre temas relacionados à gestão fiscal, tributária e financeira. No Abrasel Capacita, compartilharão informações sobre a Reforma Tributária e os impactos das novas regras para bares, restaurantes e negócios de alimentação fora do lar.',
   },
 ],
@@ -159,10 +159,8 @@ export const eventsData: MonthEvent[] = [
       { time: '20h00', activity: 'Encerramento' },
     ],
     partners: [
-  { name: 'Adeycson Siebra\nEspecialista em CRM e Soluções Digitais', logo: 
-    '/assets/consultants/adeycson-siebra.jpeg' },
-  { name: 'Erick Belo\nConsultor do Sebrae em Marketing e Vendas', logo: 
-    '/assets/consultants/erick-belo.jpeg' },
+  { name: 'Grupo Métodos', 
+    logo:'/assets/consultants/GRUPO MÉTODO.PNG'},
 ],
 
     partnerStatus:'closed',

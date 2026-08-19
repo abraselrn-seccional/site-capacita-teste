@@ -165,7 +165,7 @@ export const eventsData: MonthEvent[] = [
 
     partnerStatus:'closed',
     registrationLink: '#',
-  }
+  },
   {
     id: 'setembro',
     month: 'Setembro',

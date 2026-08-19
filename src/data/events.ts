@@ -124,6 +124,48 @@ export const eventsData: MonthEvent[] = [
     partnerStatus: 'closed',
     registrationLink: '#',
   },
+  { 
+    id: 'julho',
+    month: 'Julho',
+    date: '28/07',
+    dayOfWeek: 'TERÇA-FEIRA',
+    time: '18h30 às 20h00',
+    location: 'Sebrae RN',
+    locationDetail: 'Sala 5',
+    status: 'published',
+    themes: [
+      { title: 'O Ingrediente Invisível',
+        description: 'O maior patrimônio comercial de um restaurante é a base de clientes que ele já conquistou e que ainda não aprendeu a usar.'
+          },
+      { title: 'IA à La Carte: um menu de possibilidades para bares e restaurantes',
+        description: 'Descubra como a Inteligência Artificial pode impulsionar suas vendas, fortalecer seu marketing e otimizar a gestão do seu negócio.'
+          },
+    ],
+about: '',
+learningTopics: [],
+consultants: [
+{ 
+  name: 'Adeycson Siebra',
+  role: 'Especialista em CRM e Soluções Digitais',
+  photo: '/assets/consultants/adeycson-siebra.jpeg',
+  bio: '',
+},
+{
+  name: 'Erick Belo',
+  role: 'Consultor do Sebrae em Marketing e Vendas',
+  photo: '/assets/consultants/erick-belo.jpeg',
+  bio: '',
+},
+],
+schedule: [],
+partners: [
+{ name: 'Adeycson Siebra', logo: '/assets/consultants/adeycson-siebra.jpeg'},
+{ name: 'Erick Belo', logo: '/assets/consultants/erick-belo.jpeg'},
+  
+],
+partnerStatus: 'closed',
+registrationLink: '#',
+},
   {
     id: 'agosto',
     month: 'Agosto',

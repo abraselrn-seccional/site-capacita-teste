@@ -1,3 +1,4 @@
+
 import { ArrowRight, Calendar, CheckCircle, MessageCircle, Users, FileText, Send, Handshake } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -82,7 +83,7 @@ const Partners = () => {
 
                     {/* Partner Slots */}
                     <div className="space-y-3 mb-4">
-                      <div className="flex items-center gap-3">
+                         <>
                         {partner1Filled ? (
                           <>
                             <img
@@ -107,9 +108,10 @@ const Partners = () => {
                           </>
                         )}
                       </div>
+                      {!(event.id === 'agosto') && (
                       <div className="flex items-center gap-3">
                         {partner2Filled ? (
-                          <>
+                          
                             <img
                               src={event.partners[1]?.logo}
                               alt={event.partners[1]?.name?.split('\n')[0] || 'Parceiro 2'}
@@ -133,7 +135,7 @@ const Partners = () => {
                         )}
                       </div>
                     </div>
-
+                    )}
                     {/* Status */}
                     <div className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block ${statusColor}`}>
                       {statusText}

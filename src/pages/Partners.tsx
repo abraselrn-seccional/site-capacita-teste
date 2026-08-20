@@ -54,6 +54,7 @@ const Partners = () => {
               const partner1Filled = !!(event.partners[0]?.logo);
               const partner2Filled = !!(event.partners[1]?.logo);
               const bothFilled = partner1Filled && partner2Filled;
+              const singlePartnerMonth = event.month === 'Agosto';
 
               let statusText = '';
               let statusColor = '';
@@ -83,7 +84,7 @@ const Partners = () => {
 
                     {/* Partner Slots */}
                     <div className="space-y-3 mb-4">
-                         <div className="flex items-center gap-3">
+                         <div className={`flex gap-3 ${singlePartnerMonth ? 'flex-col items-center justify-center text-center py-2' : 'items-center'}`}>
                         {partner1Filled ? (
                             <>
                             <img
@@ -91,7 +92,7 @@ const Partners = () => {
                               alt={event.partners[0]?.name?.split('\n')[0] || 'Parceiro 1'}
                               className="w-10 h-10 rounded-lg object-cover border-2 border-green-300"
                             />
-                            <div className="flex flex-col">
+                            <div className={`flex flex-col ${singlePartnerMonth ? 'items-center' : ''}`}>
                               {event.partners[0]?.name?.split('\n').map((line, i) => (
                                 <span key={i} className={`text-sm ${i === 0 ? 'text-gray-800 font-semibold' : 'text-gray-500 text-xs'}`}>
                                   {line}
@@ -108,7 +109,8 @@ const Partners = () => {
                           </>
                         )}
                       </div>
-                      <div className="flex items-center gap-3">
+                      {!singlePartnerMonth && (
+                        <div className="flex items-center gap-3">
                         {partner2Filled ? (
                           <>
                             <img
@@ -133,6 +135,7 @@ const Partners = () => {
                           </>
                         )}
                       </div>
+                     )}
                     </div>
                     {/* Status */}
                     <div className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block ${statusColor}`}>

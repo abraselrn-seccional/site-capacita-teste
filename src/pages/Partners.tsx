@@ -83,9 +83,9 @@ const Partners = () => {
 
                     {/* Partner Slots */}
                     <div className="space-y-3 mb-4">
-                         <div className="flex items-center gap-3
+                         <div className="flex items-center gap-3>
                         {partner1Filled ? (
-                          <>
+                            <>
                             <img
                               src={event.partners[0]?.logo}
                               alt={event.partners[0]?.name?.split('\n')[0] || 'Parceiro 1'}
@@ -110,7 +110,7 @@ const Partners = () => {
                       </div>
                       <div className="flex items-center gap-3">
                         {partner2Filled ? (
-                          
+                          <>
                             <img
                               src={event.partners[1]?.logo}
                               alt={event.partners[1]?.name?.split('\n')[0] || 'Parceiro 2'}

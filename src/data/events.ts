@@ -201,8 +201,10 @@ registrationLink: '#',
       { time: '20h00', activity: 'Encerramento' },
     ],
     partners: [
-  { name: 'Grupo Métodos', 
-    logo:'/assets/consultants/grupo-metodo.png'},
+  { 
+    name: 'Grupo Métodos\nContabilidade e soluções empresariais',
+    logo:'/assets/consultants/grupo-metodo.png'
+  },
 ],
 
     partnerStatus:'closed',

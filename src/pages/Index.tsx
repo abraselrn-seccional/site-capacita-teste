@@ -193,6 +193,9 @@ const Index = () => {
                   className="absolute top-5 right-3 z-20 w-16 h-auto"
                   />
                 )}
+                <div className={`px-5 py-3 ${event.id === 'setembro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
+                  <h4 className="text-white font-bold text-sm uppercase tracking-wide">{event.month}</h4>
+                  </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
                     <Calendar className="w-4 h-4 text-gray-400" />

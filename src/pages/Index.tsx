@@ -191,7 +191,7 @@ const Index = () => {
                              ? 'bg-red-100 text-red-700'
                              :  event.id === 'setembro'
                              ? 'bg-green-100 text-green-700'
-                             ? 'bg-orange-100 text-orange-700'
+                             : 'bg-orange-100 text-orange-700'
                     }`}
                   >
                     {event.id === 'junho' || event.id === 'julho' || event.id === 'agosto'

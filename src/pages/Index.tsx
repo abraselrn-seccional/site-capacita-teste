@@ -94,7 +94,9 @@ const Index = () => {
                     {nextEvent.themes.map((theme, i) => (
                       <div key={i}>
                         <h3 className="text-xl md:text-2xl font-bold text-[#1B4332]">
-                        {i + 1}. {theme.title}
+                        {nextEvent.id === 'setembro'
+                           ? `Dia ${i + 1} - ${theme.title.replace(/^\d{2}\/\d{2}\s*-\s*/, '')}`
+                           : `${i + 1}. ${theme.title}`}
                         </h3>
                         {theme.description && (
                         <p className="text-sm md:text-base text-gray-600 mt-1">

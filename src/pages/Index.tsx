@@ -179,7 +179,7 @@ const Index = () => {
             {eventsData.map((event) => (
               <div
                 key={event.id}
-                className="relative bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                className="relative bg-white rounded-xl border border-gray-100 overflow-visible shadow-sm hover:shadow-md transition-shadow"
               >
                 {event.id === 'setembro' && (
                 <div className="absolute -top-3 right-3 z-20 bg-[#1B8A3D] text-white text-[10px] font-bold uppercase px-3 py-1 rounded-md shadow-sm">
@@ -190,10 +190,10 @@ const Index = () => {
                 <img
                   src="/assets/logo-go-rn.png"
                   alt="GO! RN"
-                  className="absolute top-2 -right-1 z-30 w-16 h-auto"
+                  className="absolute -top-1 -right-2 z-30 w-16 h-auto"
                   />
                 )}
-                <div className={`px-5 py-3 ${event.id === 'setembro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
+                <div className={`px-5 py-3 rounded-t-xl ${event.id === 'setembro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
                   <h4 className="text-white font-bold text-sm uppercase tracking-wide">{event.month}</h4>
                   </div>
                 <div className="p-5">

@@ -106,9 +106,20 @@ const Index = () => {
                   </div>
                   <div className="space-y-3 mb-8">
                     <div className="flex items-center gap-3 text-gray-700">
-                      <Calendar className="w-5 h-5 text-[#F97316]" />
-                      <span className="font-medium">{nextEvent.date} • {nextEvent.time}</span>
-                    </div>
+                      <div className="flex items-start gap-3 text-gray-700">
+                      <Calendar className="w-5 h-5 text-[#F97316] mt-1" />
+                       {nextEvent.id === 'setembro' ? (
+                         <div className="font-medium space-y-1">
+                             <div className="font-bold">{nextEvent.date}</div>
+                             <div>18/09 | <strong>15h às 17h</strong></div>
+                             <div>19/09 | <strong>13h às 15h</strong></div>
+                         </div>
+                      ) : (
+                         <span className="font-medium">
+                         {nextEvent.date} • {nextEvent.time}
+                         </span>
+                     )}
+                        </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <MapPin className="w-5 h-5 text-[#F97316]" />
                       <span className="font-medium">{nextEvent.location} - {nextEvent.locationDetail}</span>

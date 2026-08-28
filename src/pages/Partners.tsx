@@ -72,7 +72,7 @@ const Partners = () => {
               return (
                 <div
                   key={event.id}
-                  className="bg-[#F8F9FA] rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-[#F8F9FA] rounded-xl border border-[#1B4332]/30 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="p-6">
                     <h4 className="text-[#1B4332] font-bold text-lg mb-2">{event.month}</h4>

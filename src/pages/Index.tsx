@@ -153,7 +153,7 @@ const Index = () => {
                 </div>
                 <div className="hidden md:block">
                   <img
-                    src="https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuisyacaiaq/event-training-seminar.png"
+                    src="/assets/home-evento.jpg"
                     alt="Próximo evento"
                     className="rounded-xl shadow-lg w-full object-cover aspect-video"
                   />

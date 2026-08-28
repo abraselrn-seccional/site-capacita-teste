@@ -72,7 +72,7 @@ const Partners = () => {
               return (
                 <div
                   key={event.id}
-                  className="relative bg-[#F8F9FA] rounded-xl border border-[#1B4332]/30 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                  className="relative bg-[#F8F9FA] rounded-xl border border-[#1B4332]/30 overflow-visible shadow-sm hover:shadow-md transition-shadow"
                 >
                   {event.id === 'setembro' && (
                   <div className="absolute -top-3 right-3 z-20 bg-[#188A3D] text-white text-[10px] font-bold uppercase px-3 py-1 rounded-md shadow-sm">

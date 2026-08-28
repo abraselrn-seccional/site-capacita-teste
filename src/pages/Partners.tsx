@@ -83,7 +83,7 @@ const Partners = () => {
                   <img
                     src="/assets/logo-go-rn.png"
                     alt="GO! RN"
-                    className="absolute top-1 -right-1 z-30 w-16 h-auto"
+                    className="absolute top-0 -right-2 z-30 w-16 h-auto"
                     />
                   )}
                   <div className="p-6">

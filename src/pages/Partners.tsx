@@ -173,7 +173,7 @@ const Partners = () => {
                     )}
                     </div>
                     {/* Status */}
-                    <div className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block ${statusColor}`}>
+                    <div className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block ${event.id !== 'setembro' ? 'mt-8' : ''} ${statusColor}`}>
                       {statusText}
                     </div>
 

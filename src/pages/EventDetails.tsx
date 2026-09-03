@@ -161,7 +161,7 @@ const EventDetails = () => {
   style={{ backgroundImage: "url('/assets/fundo-go-rn.jpg')" }}
 >
   {/* Camada verde transparente */}
-  <div className="absolute inset-0 bg-[#1B4332]/80"></div>
+ <div className="absolute inset-0 bg-[#1B4332]/90"></div>
 
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">

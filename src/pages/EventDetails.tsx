@@ -155,66 +155,62 @@ const EventDetails = () => {
   return (
     <div className="min-h-screen">
       <Header />
+{/* Hero */}
+<section
+  className="relative pt-20 bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/assets/fundo-go-rn.jpg')" }}
+>
+  {/* Camada verde transparente */}
+  <div className="absolute inset-0 bg-[#1B4332]/80"></div>
 
-      {/* Hero */}
-      <section className="relative pt-20 bg-[#1B4332]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <div className="inline-block bg-[#F97316] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
-                {event.month} 2026
-              </div>
-              <div className="space-y-2 mb-4">
-                {event.themes.map((theme, i) => (
-                  <h1 key={i} className="text-2xl md:text-3xl font-black text-white leading-tight">
-                    {i + 1}. {theme.title}
-                  </h1>
-                ))}
-              </div>
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div className="max-w-4xl">
 
-              <div className="space-y-3 mb-8">
-                <div className="flex items-center gap-3 text-white/80">
-                  <Calendar className="w-5 h-5 text-[#F97316]" />
-                  <span>{event.date}/2026</span>
-                </div>
-                <div className="flex items-center gap-3 text-white/80">
-                  <Clock className="w-5 h-5 text-[#F97316]" />
-                  <span>{event.time}</span>
-                </div>
-                <div className="flex items-center gap-3 text-white/80">
-                  <MapPin className="w-5 h-5 text-[#F97316]" />
-                  <span>{event.location} {event.locationDetail && `- ${event.locationDetail}`}</span>
-                </div>
-              </div>
+      <div className="inline-block bg-[#F97316] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        EDIÇÃO ESPECIAL
+      </div>
 
-              <div className="bg-white/10 border border-white/20 rounded-lg px-4 py-3 flex items-center gap-3 mb-8">
-                <Shield className="w-5 h-5 text-[#F97316]" />
-                <span className="text-white text-sm font-medium">
-                  EVENTO EXCLUSIVO PARA ASSOCIADOS ABRASEL RN
-                </span>
-              </div>
+      <img
+        src="/assets/logo-go-rn.png"
+        alt="GO! RN"
+        className="w-32 md:w-40 h-auto mb-6"
+      />
 
-              <a
-                href={REGISTRATION_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#ea580c] text-white font-bold px-8 py-4 rounded-lg text-base transition-all shadow-lg shadow-orange-500/20"
-              >
-                QUERO ME INSCREVER
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
-            <div className="hidden md:block">
-              <img
-                src="https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-12/qmuisyacaiaq/event-training-seminar.png"
-                alt="Evento Abrasel Capacita"
-                className="rounded-xl shadow-2xl w-full object-cover aspect-video"
-              />
-            </div>
-          </div>
+      <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-4">
+        ABRASEL CAPACITA
+      </h1>
+
+      <p className="text-white/90 text-lg md:text-xl font-medium mb-8">
+        Dois dias de conteúdo, inovação e conhecimento para o setor de alimentação fora do lar.
+      </p>
+
+      <div className="space-y-3 mb-8">
+        <div className="flex items-center gap-3 text-white">
+          <Calendar className="w-5 h-5 text-[#F97316]" />
+          <span className="font-medium">18 e 19 de setembro de 2026</span>
         </div>
-      </section>
 
+        <div className="flex items-center gap-3 text-white">
+          <Clock className="w-5 h-5 text-[#F97316]" />
+          <span>18/09 | 15h às 17h &nbsp; • &nbsp; 19/09 | 13h às 15h</span>
+        </div>
+
+        <div className="flex items-center gap-3 text-white">
+          <MapPin className="w-5 h-5 text-[#F97316]" />
+          <span>Centro de Convenções de Natal</span>
+        </div>
+      </div>
+
+      <div className="inline-flex bg-white/10 border border-white/20 rounded-lg px-4 py-3 items-center gap-3">
+        <Shield className="w-5 h-5 text-[#F97316]" />
+        <span className="text-white text-sm font-medium">
+          EVENTO EXCLUSIVO PARA ASSOCIADOS ABRASEL
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* Sobre o Encontro */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

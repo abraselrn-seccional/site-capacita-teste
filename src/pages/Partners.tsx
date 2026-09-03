@@ -171,6 +171,7 @@ const Partners = () => {
                     </div>
                     </div>
                     )}
+                    </div>
                     {/* Status */}
                     <div className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block ${statusColor}`}>
                       {statusText}

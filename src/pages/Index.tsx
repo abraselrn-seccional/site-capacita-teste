@@ -129,7 +129,7 @@ const Index = () => {
                       <Users className="w-5 h-5 text-[#F97316]" />
                       <div className="font-medium space-y-1">
                         <div><strong className="text-[#F97316]">Dia 1:</strong> Alberto Kastro</div>
-                        <div><strong className="text-[#F97316]">Dia 2:</strong> Cruz – Assessoria Empresarial + Soft3</div>
+                        <div><strong className="text-[#F97316]">Dia 2:</strong> Cruz – Assessoria Empresarial + Soft3 Tecnologia</div>
                       </div>
                     </div>
                   </div>

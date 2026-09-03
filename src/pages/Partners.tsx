@@ -92,10 +92,14 @@ const Partners = () => {
                       <Calendar className="w-4 h-4 text-gray-400" />
                       <span className="text-2xl font-bold text-[#F97316]">{event.date}</span>
                     </div>
-                    <p className="text-gray-500 text-xs uppercase font-medium mb-4">{event.dayOfWeek}</p>
-
-                    {/* Partner Slots */}
+                    {event.id !== 'setembro' && (
+                  <p className="text-gray-500 text-xs uppercase font-medium mb-4">{event.dayOfWeek}</p>
+                    )}
+                  {/* Partner Slots */}
                     <div className="space-y-3 mb-4">
+                      {event.id === 'setembro' && (
+                  <p className="text-xs font-bold text-[#1B4332] uppercase">SEXTA-FEIRA</p>
+                  )}
                          <div className={`flex gap-3 ${singlePartnerMonth ? 'flex-col items-center justify-center text-center py-2' : 'items-center'}`}>
                         {partner1Filled ? (
                             <>
@@ -121,6 +125,9 @@ const Partners = () => {
                           </>
                         )}
                       </div>
+                      {event.id === 'setembro' && (
+                  <p className="text-xs font-bold text-[#1B4332] uppercase">SÁBADO</p>
+                  )}
                       {!singlePartnerMonth && (
                         <div className="flex items-center gap-3">
                         {partner2Filled ? (
@@ -148,7 +155,22 @@ const Partners = () => {
                         )}
                       </div>
                      )}
+                      {event.id === 'setembro' && (
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={event.partners[2]?.logo}
+                      alt={event.partners[2]?.name?.split('\n')[0] || 'Parceiro 2'}
+                    className="w-10 h-10 rounded-lg object-cover border-2 border-green-300"
+                      />
+                    <div className="flex flex-col">
+                      {event.partners[2]?.name?.split('\n').map((line, i) => (
+                    <span key={i} className={`text-sm ${i === 0 ? 'text-gray-800 font-semibold' : 'text-gray-500 text-xs'}`}>
+                      {line}
+                      </span>
+                    ))}
                     </div>
+                    </div>
+                    )}
                     {/* Status */}
                     <div className={`text-xs font-bold px-3 py-1.5 rounded-full inline-block ${statusColor}`}>
                       {statusText}

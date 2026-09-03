@@ -230,8 +230,9 @@ registrationLink: '#',
     partners: [
       { name: '', logo: '' },
       { name: '', logo: '' },
+      { name: '', logo: '' },
     ],
-    partnerStatus: '2_available',
+    partnerStatus: 'closed',
     registrationLink: '#',
   },
   {

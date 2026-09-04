@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import {
   ArrowRight,
+  ArrowLeft,
   Calendar,
   Clock,
   MapPin,
@@ -25,7 +26,28 @@ const eventBenefits = [
   { icon: Lightbulb, title: 'Especialistas Convidados', desc: 'Profissionais com experiência comprovada' },
   { icon: TrendingUp, title: 'Aplicação Prática', desc: 'Estratégias para aplicar no dia seguinte' },
 ];
-
+const septemberDay1Benefits = [
+  {
+    icon: BookOpen,
+    title: 'Conteúdo Atualizado',
+    desc: 'Inteligência Artificial aplicada à realidade de bares e restaurantes'
+  },
+  {
+    icon: Users,
+    title: 'Networking',
+    desc: 'Conexão e troca de experiências com empresários e profissionais do setor'
+  },
+  {
+    icon: Lightbulb,
+    title: 'Especialista Convidado',
+    desc: 'Conteúdo conduzido por especialista em Inteligência Artificial aplicada aos negócios'
+  },
+  {
+    icon: TrendingUp,
+    title: 'Aplicação Prática',
+    desc: 'Traga um problema real e experimente a IA durante a própria oficina'
+  },
+];
 const EventDetails = () => {
   const { eventId } = useParams<{ eventId: string }>();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -255,6 +277,14 @@ const EventDetails = () => {
       DIA 2 · 19/09 · SÁBADO
     </button>
   </div>
+  {/* Indicação para alternar o dia */}
+<div className="absolute left-full ml-5 top-8 hidden lg:flex items-start gap-2 text-[#F72585]">
+  <ArrowLeft className="w-10 h-10 -rotate-12" />
+  <span className="text-sm font-semibold italic leading-tight whitespace-nowrap mt-5">
+    Clique para<br />
+    alternar o dia
+  </span>
+</div>
 </div>
   )}
       {event.id === 'setembro' && activeDay === 1 && (
@@ -384,8 +414,8 @@ const EventDetails = () => {
       'Proprietários de bares e restaurantes',
       'Gestores e líderes do setor',
       'Profissionais responsáveis pela operação',
-      'Profissionais de marketing e vendas',
       'Empresários que desejam aplicar IA no negócio',
+      'Associados Abrasel RN',
     ]
   : [
       'Proprietários de bares',
@@ -395,10 +425,20 @@ const EventDetails = () => {
       'Associados Abrasel RN',
     ]
 ).map((item) => (
-  <div key={item} className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3">
-    <CheckCircle className="w-5 h-5 text-[#F72585] flex-shrink-0" />
-    <span className="text-white text-sm font-medium">{item}</span>
+  <div key={item} className="flex flex-col items-center justify-center text-center gap-3 bg-white/5 rounded-xl px-4 py-5">
+  <div className="w-10 h-10 rounded-full bg-[#F72585]/15 flex items-center justify-center">
+    {item.includes('bares e restaurantes') ? (
+  <Users className="w-6 h-6 text-[#F72585]" />
+) : item.includes('Gestores') ? (
+  <TrendingUp className="w-6 h-6 text-[#F72585]" />
+) : item.includes('operação') ? (
+  <BookOpen className="w-6 h-6 text-[#F72585]" />
+) : (
+  <Lightbulb className="w-6 h-6 text-[#F72585]" />
+)}
   </div>
+  <span className="text-white text-sm font-medium leading-snug">{item}</span>
+</div>
 ))}
           </div>
         </div>
@@ -434,7 +474,30 @@ const EventDetails = () => {
           </div>
         </div>
       </section>
+  {event.id === 'setembro' && activeDay === 1 && (
+  <section className="bg-white pb-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border border-[#F72585]/30 bg-[#F72585]/5 rounded-xl px-6 py-5">
+        <div>
+          <p className="text-[#F72585] font-bold mb-1">
+            Quer saber o que vem no Dia 2?
+          </p>
+          <p className="text-gray-600 text-sm">
+            Clique na aba acima e conheça a programação completa do próximo encontro.
+          </p>
+        </div>
 
+        <button
+          onClick={() => setActiveDay(2)}
+          className="inline-flex items-center gap-2 bg-[#F72585] hover:bg-[#e91e73] text-white font-bold px-6 py-3 rounded-lg text-sm transition-all flex-shrink-0"
+        >
+          VER DIA 2
+          <ArrowRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  </section>
+)}
       {/* Benefícios */}
       <section className="py-16 bg-[#F8F9FA]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -442,11 +505,11 @@ const EventDetails = () => {
             Benefícios
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            {eventBenefits.map((benefit) => (
+            {(event.id === 'setembro' && activeDay === 1 ? septemberDay1Benefits : eventBenefits).map((benefit) => (
               <div key={benefit.title} className="bg-white p-6 rounded-xl border border-gray-100 flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#1B4332] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <benefit.icon className="w-6 h-6 text-white" />
-                </div>
+                <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+  <benefit.icon className="w-8 h-8 text-[#F72585]" />
+</div>
                 <div>
                   <h4 className="font-bold text-[#1B4332] mb-1">{benefit.title}</h4>
                   <p className="text-gray-600 text-sm">{benefit.desc}</p>

@@ -229,8 +229,8 @@ const EventDetails = () => {
     </div>
   </div>
 </section>
-      {event.id === 'setembro' && (
-      {/* Abas Dia 1 / Dia 2 */}
+  {/* Abas Dia 1 / Dia 2 */}
+{event.id === 'setembro' && (
 <div className="relative z-20 -mt-6 max-w-2xl mx-auto px-4">
   <div className="grid grid-cols-2 bg-white rounded-xl shadow-lg overflow-hidden border border-[#F72585]">
     <button

@@ -173,6 +173,11 @@ const EventDetails = () => {
   <div className="w-72 h-32 border-t-2 border-r-2 border-[#F72585] rounded-tr-[110px] opacity-70 -mt-24 ml-8"></div>
   <div className="w-64 h-28 border-t-2 border-r-2 border-[#F72585] rounded-tr-[100px] opacity-60 -mt-20 ml-16"></div>
 </div>
+  {/* Traços coloridos - canto inferior direito */}
+<div className="absolute bottom-12 right-5 z-[5] hidden md:flex gap-3 items-end">
+  <div className="w-16 h-4 bg-[#00AEEF] rounded-full rotate-[-45deg]"></div>
+  <div className="w-16 h-4 bg-[#F72585] rounded-full rotate-[-45deg]"></div>
+</div>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
       

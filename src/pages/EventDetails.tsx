@@ -229,6 +229,32 @@ const EventDetails = () => {
     </div>
   </div>
 </section>
+      {/* Abas Dia 1 / Dia 2 */}
+<div className="relative z-20 -mt-6 max-w-2xl mx-auto px-4">
+  <div className="grid grid-cols-2 bg-white rounded-xl shadow-lg overflow-hidden border border-[#F72585]">
+    <button
+      onClick={() => setActiveDay(1)}
+      className={`py-4 px-4 font-bold transition-all ${
+        activeDay === 1
+          ? 'bg-[#F72585] text-white'
+          : 'bg-white text-[#1B4332]'
+      }`}
+    >
+      DIA 1 · 18/09 · SEXTA
+    </button>
+
+    <button
+      onClick={() => setActiveDay(2)}
+      className={`py-4 px-4 font-bold transition-all ${
+        activeDay === 2
+          ? 'bg-[#F72585] text-white'
+          : 'bg-white text-[#1B4332]'
+      }`}
+    >
+      DIA 2 · 19/09 · SÁBADO
+    </button>
+  </div>
+</div>
       {/* Sobre o Encontro */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

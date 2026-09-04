@@ -29,6 +29,7 @@ const eventBenefits = [
 const EventDetails = () => {
   const { eventId } = useParams<{ eventId: string }>();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeDay, setActiveDay] = useState<1 | 2>(1);
 
   const event = eventsData.find((e) => e.id === eventId);
 

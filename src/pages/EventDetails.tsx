@@ -598,8 +598,10 @@ const EventDetails = () => {
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border border-[#F72585]/30 bg-[#F72585]/5 rounded-xl px-6 py-5">
         <div>
           <p className="text-[#F72585] font-bold mb-1">
-             ? 'Quer saber o que vem no Dia 2?'
-             : 'Quer rever o conteúdo do Dia 1?'}
+  {activeDay === 1
+    ? 'Quer saber o que vem no Dia 2?'
+    : 'Quer rever o conteúdo do Dia 1?'}
+</p>
           </p>
           <p className="text-gray-600 text-sm">
             Clique na aba acima e conheça a programação completa do próximo encontro.

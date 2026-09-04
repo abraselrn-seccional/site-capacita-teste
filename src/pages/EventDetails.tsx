@@ -165,20 +165,22 @@ const EventDetails = () => {
 
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
+      
+     <div className="flex items-center gap-3 mb-4">
+  <span className="text-white text-sm md:text-base font-bold uppercase tracking-wide">
+    ABRASEL CAPACITA
+  </span>
 
-      <div className="inline-block bg-[#F97316] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
-        EDIÇÃO ESPECIAL
-      </div>
+  <span className="bg-[#F72585] text-white text-xs font-bold uppercase px-3 py-1.5 rounded-full">
+    EDIÇÃO ESPECIAL
+  </span>
+</div>
 
-      <img
-        src="/assets/logo-go-rn.png"
-        alt="GO! RN"
-        className="w-32 md:w-40 h-auto mb-6"
-      />
-
-      <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-4">
-        ABRASEL CAPACITA
-      </h1>
+<img
+  src="/assets/logo-go-rn.png"
+  alt="GO! RN"
+  className="w-40 md:w-52 h-auto mb-6"
+/>
 
       <p className="text-white/90 text-lg md:text-xl font-medium mb-8">
         Dois dias de conteúdo, inovação e conhecimento para o setor de alimentação fora do lar.

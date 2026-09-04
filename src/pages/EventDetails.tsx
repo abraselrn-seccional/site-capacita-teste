@@ -453,7 +453,7 @@ const EventDetails = () => {
           />
 
           <h4 className="font-bold text-[#1B4332] text-xl">
-            Bruno Vittor Santos Cruz
+            Bruno Vittor e Guilherme Gama
           </h4>
 
           <p className="text-[#F72585] text-sm font-semibold mb-3">
@@ -727,7 +727,15 @@ const EventDetails = () => {
           </div>
         </div>
       </section>
-
+<div className="bg-white py-8 text-center">
+  <Link
+    to="/"
+    className="inline-flex items-center gap-2 text-[#1B4332] font-semibold hover:text-[#F72585] transition-colors"
+  >
+    <ArrowLeft className="w-4 h-4" />
+    Voltar para a página inicial
+  </Link>
+</div>
       <Footer />
     </div>
   );

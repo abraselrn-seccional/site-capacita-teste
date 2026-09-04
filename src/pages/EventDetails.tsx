@@ -168,6 +168,11 @@ const EventDetails = () => {
 <div className="w-24 h-3 bg-[#F72585] rounded-full rotate-[-45deg] translate-x-3"></div>
 <div className="w-16 h-3 bg-[#FFB000] rounded-full rotate-[-45deg] translate-x-8"></div>
 </div>
+  <div className="absolute top-6 right-0 z-[4] hidden md:block">
+  <div className="w-48 h-24 border-t-2 border-r-2 border-[#F72585] rounded-tr-[80px] opacity-80"></div>
+  <div className="w-44 h-20 border-t-2 border-r-2 border-[#F72585] rounded-tr-[70px] opacity-70 -mt-16 ml-4"></div>
+  <div className="w-40 h-16 border-t-2 border-r-2 border-[#F72585] rounded-tr-[60px] opacity-60 -mt-12 ml-8"></div>
+</div>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
       

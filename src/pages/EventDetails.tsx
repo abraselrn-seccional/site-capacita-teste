@@ -602,7 +602,6 @@ const EventDetails = () => {
     ? 'Quer saber o que vem no Dia 2?'
     : 'Quer rever o conteúdo do Dia 1?'}
 </p>
-          </p>
           <p className="text-gray-600 text-sm">
             Clique na aba acima e conheça a programação completa do próximo encontro.
           </p>

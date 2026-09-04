@@ -163,6 +163,11 @@ const EventDetails = () => {
   {/* Camada verde transparente */}
  <div className="absolute inset-0 bg-[#004D3A]/85"></div>
 
+  <div className="absolute top-32 right-0 z-[5] flex flex-col gap-3 items-end">
+    <div className="w-20 h-3 bg-[#00AEEF] rounded-full rotate-[-45deg] translate-x-6"></div>
+<div className="w-24 h-3 bg-[#F72585] rounded-full rotate-[-45deg] translate-x-3"></div>
+<div className="w-16 h-3 bg-[#FFB000] rounded-full rotate-[-45deg] translate-x-8"></div>
+</div>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
       

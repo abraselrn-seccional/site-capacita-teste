@@ -48,6 +48,28 @@ const septemberDay1Benefits = [
     desc: 'Traga um problema real e experimente a IA durante a própria oficina'
   },
 ];
+const septemberDay2Benefits = [
+  {
+    icon: BookOpen,
+    title: 'Conteúdo Atualizado',
+    desc: 'Informações práticas sobre a Reforma Tributária e seus impactos no negócio'
+  },
+  {
+    icon: Users,
+    title: 'Networking',
+    desc: 'Conexão e troca de experiências com empresários e profissionais do setor'
+  },
+  {
+    icon: Lightbulb,
+    title: 'Especialistas Convidados',
+    desc: 'Conteúdo com especialistas em contabilidade, gestão e tecnologia'
+  },
+  {
+    icon: TrendingUp,
+    title: 'Aplicação Prática',
+    desc: 'Cadastro de produtos e tributação na prática com o Cloudfy ERP'
+  },
+];
 const EventDetails = () => {
   const { eventId } = useParams<{ eventId: string }>();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -310,6 +332,29 @@ const EventDetails = () => {
     </div>
   </section>
 )}
+      {event.id === 'setembro' && activeDay === 2 && (
+  <section className="pt-14 pb-8 bg-white">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="border-l-4 border-[#F72585] pl-5">
+        <p className="text-[#F72585] text-sm font-bold uppercase mb-2">
+          DIA 2 · SÁBADO · 19/09
+        </p>
+
+        <p className="text-[#F72585] font-semibold mb-3">
+          13h às 15h
+        </p>
+
+        <h1 className="text-3xl md:text-4xl font-black text-[#1B4332] leading-tight mb-3">
+          REFORMA TRIBUTÁRIA NA PRÁTICA
+        </h1>
+
+        <p className="text-gray-700 text-lg">
+          Da contabilidade ao sistema
+        </p>
+      </div>
+    </div>
+  </section>
+)}
       {/* Sobre o Encontro */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -317,9 +362,13 @@ const EventDetails = () => {
             Sobre o Encontro
           </h2>
           <div className="space-y-4">
-         {event.id === 'setembro' && activeDay === 1 ? (
+       {event.id === 'setembro' && activeDay === 1 ? (
   <p className="text-gray-600 leading-relaxed text-base">
     Oficina prática de 2 horas voltada para empresários e profissionais do setor de restaurantes, mostrando como aplicar Inteligência Artificial para resolver problemas reais do dia a dia. Durante a atividade, os participantes irão experimentar assistentes de IA desenvolvidos para apoiar a operação e o crescimento dos negócios, com aplicações em ficha técnica, custos, padronização, marketing, clientes e vendas.
+  </p>
+) : event.id === 'setembro' && activeDay === 2 ? (
+  <p className="text-gray-600 leading-relaxed text-base">
+    Uma capacitação prática para ajudar empresários a entender os impactos da Reforma Tributária e começar a preparar seus negócios para as mudanças. Na primeira etapa, a Cruz – Assessoria Empresarial apresenta as principais mudanças da Reforma Tributária sobre o consumo e seus impactos nas rotinas fiscais e empresariais. Na segunda, a Soft3 leva o conteúdo para a prática, mostrando como essas mudanças chegam ao cadastro de produtos, ao preenchimento fiscal e à tributação dentro de um sistema de gestão.
   </p>
 ) : (
   event.about.split('\n\n').map((paragraph, i) => (
@@ -337,13 +386,21 @@ const EventDetails = () => {
             O que Você Vai Aprender
           </h2>
           <div className="space-y-4">
-          {(event.id === 'setembro' && activeDay === 1
+         {(event.id === 'setembro' && activeDay === 1
   ? [
       'Identificar onde a Inteligência Artificial pode ajudar no dia a dia do restaurante, a partir de problemas reais da operação.',
       'Usar a IA para apoiar ficha técnica, custos e padronização, tornando a gestão mais organizada e eficiente.',
       'Aplicar Inteligência Artificial em marketing, relacionamento com clientes e vendas, buscando novas oportunidades de crescimento.',
       'Transformar um problema real do seu negócio em uma solução prática com IA, colocando a ferramenta para trabalhar durante a própria oficina.',
       'Utilizar assistentes de IA desenvolvidos para a realidade de restaurantes, com possibilidade de continuar experimentando as ferramentas após o encontro.',
+    ]
+  : event.id === 'setembro' && activeDay === 2
+  ? [
+      'Entender as principais mudanças da Reforma Tributária sobre o consumo e seus impactos para as empresas.',
+      'Compreender o papel do IBS e da CBS e como acontecerá o período de transição.',
+      'Identificar impactos na formação de preços, documentos fiscais, apuração de tributos e processos internos.',
+      'Entender a importância do cadastro correto dos produtos na nova realidade tributária.',
+      'Acompanhar, na prática, o preenchimento fiscal e a tributação de produtos dentro do Cloudfy ERP.',
     ]
   : event.learningTopics
 ).map((topic, index) => (
@@ -357,50 +414,96 @@ const EventDetails = () => {
       </section>
 
       {/* Consultores */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#1B4332] uppercase mb-8">
-            Consultor
-          </h2>
-       <div className="flex justify-center">
-  {event.id === 'setembro' && activeDay === 1 ? (
-    <div className="max-w-xl text-center">
-      <img
-        src="/assets/consultants/alberto-kastro.png"
-        alt="Alberto Kastro"
-        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
-      />
+     <section className="py-16 bg-white">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-2xl md:text-3xl font-bold text-[#1B4332] uppercase mb-8">
+      {event.id === 'setembro' && activeDay === 2 ? 'Especialistas' : 'Consultor'}
+    </h2>
 
-      <h4 className="font-bold text-[#1B4332] text-xl">
-        Alberto Kastro
-      </h4>
+    {event.id === 'setembro' && activeDay === 1 ? (
+      <div className="flex justify-center">
+        <div className="max-w-xl text-center">
+          <img
+            src="/assets/consultants/alberto-kastro.png"
+            alt="Alberto Kastro"
+            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+          />
 
-      <p className="text-[#F72585] text-sm font-semibold mb-3">
-        Estratégia e Transformação com IA
-      </p>
+          <h4 className="font-bold text-[#1B4332] text-xl">
+            Alberto Kastro
+          </h4>
 
-      <p className="text-gray-600 text-sm leading-relaxed">
-        Estrategista em IA Aplicada, fundador do IA45, criador do Congresso de IA Aplicada e líder do CIIA – Centro de Inovação em IA Aplicada. Autor do livro Inteligência Aumentada, desenvolve metodologias que integram inteligência artificial, gestão e educação para gerar inovação e resultados.
-      </p>
-    </div>
-  ) : (
-    event.consultants.map((consultant) => (
-      <div key={consultant.name} className="text-center">
-        <img
-          src={consultant.photo}
-          alt={consultant.name}
-          className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
-        />
-        <h4 className="font-bold text-[#1B4332] text-lg">{consultant.name}</h4>
-        <p className="text-[#F97316] text-sm font-medium mb-2">{consultant.role}</p>
-        <p className="text-gray-600 text-sm">{consultant.bio}</p>
-      </div>
-    ))
-  )}
-</div>
+          <p className="text-[#F72585] text-sm font-semibold mb-3">
+            Estratégia e Transformação com IA
+          </p>
+
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Estrategista em IA Aplicada, fundador do IA45, criador do Congresso de IA Aplicada e líder do CIIA – Centro de Inovação em IA Aplicada. Autor do livro Inteligência Aumentada, desenvolve metodologias que integram inteligência artificial, gestão e educação para gerar inovação e resultados.
+          </p>
         </div>
-      </section>
+      </div>
+    ) : event.id === 'setembro' && activeDay === 2 ? (
+      <div className="grid md:grid-cols-2 gap-8">
 
+        <div className="text-center bg-[#F8F9FA] rounded-2xl p-6 border border-gray-100">
+          <img
+            src="/assets/consultants/cruz-assessoria.jpeg"
+            alt="Cruz - Assessoria Empresarial"
+            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+          />
+
+          <h4 className="font-bold text-[#1B4332] text-xl">
+            Bruno Vittor Santos Cruz
+          </h4>
+
+          <p className="text-[#F72585] text-sm font-semibold mb-3">
+            Cruz – Assessoria Empresarial
+          </p>
+
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Responsável pela primeira etapa da capacitação, apresentando os impactos da Reforma Tributária sobre as rotinas contábeis, fiscais e empresariais.
+          </p>
+        </div>
+
+        <div className="text-center bg-[#F8F9FA] rounded-2xl p-6 border border-gray-100">
+          <img
+            src="/assets/consultants/soft3.jpg"
+            alt="Soft3 Tecnologia"
+            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+          />
+
+          <h4 className="font-bold text-[#1B4332] text-xl">
+            Soft3 Tecnologia
+          </h4>
+
+          <p className="text-[#F72585] text-sm font-semibold mb-3">
+            Cloudfy ERP
+          </p>
+
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Responsável pela etapa Mão na Massa, com apresentação técnica do cadastro de produtos, preenchimento fiscal e módulo de tributação do Cloudfy ERP.
+          </p>
+        </div>
+
+      </div>
+    ) : (
+      <div className="flex justify-center">
+        {event.consultants.map((consultant) => (
+          <div key={consultant.name} className="text-center">
+            <img
+              src={consultant.photo}
+              alt={consultant.name}
+              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+            />
+            <h4 className="font-bold text-[#1B4332] text-lg">{consultant.name}</h4>
+            <p className="text-[#F97316] text-sm font-medium mb-2">{consultant.role}</p>
+            <p className="text-gray-600 text-sm">{consultant.bio}</p>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</section>
       {/* Para quem é */}
       <section className="py-16 bg-[#1B4332]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -415,6 +518,14 @@ const EventDetails = () => {
       'Gestores e líderes do setor',
       'Profissionais responsáveis pela operação',
       'Empresários que desejam aplicar IA no negócio',
+      'Associados Abrasel RN',
+    ]
+  : event.id === 'setembro' && activeDay === 2
+  ? [
+      'Proprietários de bares e restaurantes',
+      'Gestores e líderes do setor',
+      'Profissionais responsáveis pela gestão fiscal e administrativa',
+      'Empresários que precisam preparar seus negócios para a Reforma Tributária',
       'Associados Abrasel RN',
     ]
   : [
@@ -451,7 +562,7 @@ const EventDetails = () => {
             Programação
           </h2>
           <div className="space-y-0">
-           {(event.id === 'setembro' && activeDay === 1
+          {(event.id === 'setembro' && activeDay === 1
   ? [
       { time: '14h30', activity: 'Credenciamento e networking' },
       { time: '15h00–15h20', activity: 'O RESTAURANTE REAL — Principais dores, gargalos e oportunidades onde a IA pode ajudar.' },
@@ -459,6 +570,13 @@ const EventDetails = () => {
       { time: '15h50–16h40', activity: 'MÃO NA MASSA — Aplicação da IA a um problema real do próprio restaurante, com acompanhamento dos facilitadores.' },
       { time: '16h40–16h55', activity: 'DESAFIO — Uso da IA para produzir uma solução prática para o negócio.' },
       { time: '16h55–17h00', activity: 'ENTREGA — Acesso aos assistentes utilizados na oficina para continuar experimentando e aplicando a IA após o evento.' },
+    ]
+  : event.id === 'setembro' && activeDay === 2
+  ? [
+      { time: '13h00', activity: 'ABERTURA — Início da capacitação e apresentação da proposta do encontro.' },
+      { time: 'PARTE 1', activity: 'CRUZ — Reforma Tributária sobre o Consumo: impactos práticos para a contabilidade e as empresas.' },
+      { time: 'PARTE 2', activity: 'SOFT3 — MÃO NA MASSA: Cloudfy ERP – Cadastro de Produtos, preenchimento fiscal e módulo de tributação.' },
+      { time: '15h00', activity: 'ENCERRAMENTO — Fechamento da capacitação.' },
     ]
   : event.schedule
 ).map((item, index) => (
@@ -480,7 +598,8 @@ const EventDetails = () => {
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border border-[#F72585]/30 bg-[#F72585]/5 rounded-xl px-6 py-5">
         <div>
           <p className="text-[#F72585] font-bold mb-1">
-            Quer saber o que vem no Dia 2?
+             ? 'Quer saber o que vem no Dia 2?'
+             : 'Quer rever o conteúdo do Dia 1?'}
           </p>
           <p className="text-gray-600 text-sm">
             Clique na aba acima e conheça a programação completa do próximo encontro.
@@ -488,10 +607,10 @@ const EventDetails = () => {
         </div>
 
         <button
-          onClick={() => setActiveDay(2)}
+          onClick={() => setActiveDay(activeDay === 1 ? 2 : 1)}
           className="inline-flex items-center gap-2 bg-[#F72585] hover:bg-[#e91e73] text-white font-bold px-6 py-3 rounded-lg text-sm transition-all flex-shrink-0"
         >
-          VER DIA 2
+          {activeDay === 1 ? 'VER DIA 2' : 'VER DIA 1'}
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>
@@ -505,7 +624,12 @@ const EventDetails = () => {
             Benefícios
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            {(event.id === 'setembro' && activeDay === 1 ? septemberDay1Benefits : eventBenefits).map((benefit) => (
+            {(event.id === 'setembro' && activeDay === 1
+  ? septemberDay1Benefits
+  : event.id === 'setembro' && activeDay === 2
+  ? septemberDay2Benefits
+  : eventBenefits
+).map((benefit) => (
               <div key={benefit.title} className="bg-white p-6 rounded-xl border border-gray-100 flex items-start gap-4">
                 <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
   <benefit.icon className="w-8 h-8 text-[#F72585]" />

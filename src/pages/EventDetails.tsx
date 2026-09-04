@@ -229,6 +229,7 @@ const EventDetails = () => {
     </div>
   </div>
 </section>
+      {event.id === 'setembro' && (
       {/* Abas Dia 1 / Dia 2 */}
 <div className="relative z-20 -mt-6 max-w-2xl mx-auto px-4">
   <div className="grid grid-cols-2 bg-white rounded-xl shadow-lg overflow-hidden border border-[#F72585]">
@@ -255,6 +256,30 @@ const EventDetails = () => {
     </button>
   </div>
 </div>
+  )}
+      {event.id === 'setembro' && activeDay === 1 && (
+  <section className="pt-14 pb-8 bg-white">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="border-l-4 border-[#F72585] pl-5">
+        <p className="text-[#F72585] text-sm font-bold uppercase mb-2">
+          DIA 1 · SEXTA-FEIRA · 18/09
+        </p>
+
+        <p className="text-[#F72585] font-semibold mb-3">
+          15h às 17h
+        </p>
+
+        <h1 className="text-3xl md:text-4xl font-black text-[#1B4332] leading-tight mb-3">
+          RESTAURANTE INTELIGENTE
+        </h1>
+
+        <p className="text-gray-700 text-lg">
+          Como transformar a Inteligência Artificial em uma equipe que trabalha com você
+        </p>
+      </div>
+    </div>
+  </section>
+)}
       {/* Sobre o Encontro */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -262,9 +287,15 @@ const EventDetails = () => {
             Sobre o Encontro
           </h2>
           <div className="space-y-4">
-            {event.about.split('\n\n').map((paragraph, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed text-base">{paragraph}</p>
-            ))}
+         {event.id === 'setembro' && activeDay === 1 ? (
+  <p className="text-gray-600 leading-relaxed text-base">
+    Oficina prática de 2 horas voltada para empresários e profissionais do setor de restaurantes, mostrando como aplicar Inteligência Artificial para resolver problemas reais do dia a dia. Durante a atividade, os participantes irão experimentar assistentes de IA desenvolvidos para apoiar a operação e o crescimento dos negócios, com aplicações em ficha técnica, custos, padronização, marketing, clientes e vendas.
+  </p>
+) : (
+  event.about.split('\n\n').map((paragraph, i) => (
+    <p key={i} className="text-gray-600 leading-relaxed text-base">{paragraph}</p>
+  ))
+)}
           </div>
         </div>
       </section>
@@ -276,12 +307,21 @@ const EventDetails = () => {
             O que Você Vai Aprender
           </h2>
           <div className="space-y-4">
-            {event.learningTopics.map((topic, index) => (
-              <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg border border-gray-100">
-                <CheckCircle className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">{topic}</span>
-              </div>
-            ))}
+          {(event.id === 'setembro' && activeDay === 1
+  ? [
+      'Identificar onde a Inteligência Artificial pode ajudar no dia a dia do restaurante, a partir de problemas reais da operação.',
+      'Usar a IA para apoiar ficha técnica, custos e padronização, tornando a gestão mais organizada e eficiente.',
+      'Aplicar Inteligência Artificial em marketing, relacionamento com clientes e vendas, buscando novas oportunidades de crescimento.',
+      'Transformar um problema real do seu negócio em uma solução prática com IA, colocando a ferramenta para trabalhar durante a própria oficina.',
+      'Utilizar assistentes de IA desenvolvidos para a realidade de restaurantes, com possibilidade de continuar experimentando as ferramentas após o encontro.',
+    ]
+  : event.learningTopics
+).map((topic, index) => (
+  <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg border border-gray-100">
+    <CheckCircle className="w-5 h-5 text-[#F72585] flex-shrink-0 mt-0.5" />
+    <span className="text-gray-700">{topic}</span>
+  </div>
+))}
           </div>
         </div>
       </section>
@@ -292,20 +332,42 @@ const EventDetails = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#1B4332] uppercase mb-8">
             Consultor
           </h2>
-          <div className="flex justify-center">
-            {event.consultants.map((consultant) => (
-              <div key={consultant.name} className="text-center">
-                <img
-                  src={consultant.photo}
-                  alt={consultant.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
-                />
-                <h4 className="font-bold text-[#1B4332] text-lg">{consultant.name}</h4>
-                <p className="text-[#F97316] text-sm font-medium mb-2">{consultant.role}</p>
-                <p className="text-gray-600 text-sm">{consultant.bio}</p>
-              </div>
-            ))}
-          </div>
+       <div className="flex justify-center">
+  {event.id === 'setembro' && activeDay === 1 ? (
+    <div className="max-w-xl text-center">
+      <img
+        src="/assets/consultants/alberto-kastro.png"
+        alt="Alberto Kastro"
+        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+      />
+
+      <h4 className="font-bold text-[#1B4332] text-xl">
+        Alberto Kastro
+      </h4>
+
+      <p className="text-[#F72585] text-sm font-semibold mb-3">
+        Estratégia e Transformação com IA
+      </p>
+
+      <p className="text-gray-600 text-sm leading-relaxed">
+        Estrategista em IA Aplicada, fundador do IA45, criador do Congresso de IA Aplicada e líder do CIIA – Centro de Inovação em IA Aplicada. Autor do livro Inteligência Aumentada, desenvolve metodologias que integram inteligência artificial, gestão e educação para gerar inovação e resultados.
+      </p>
+    </div>
+  ) : (
+    event.consultants.map((consultant) => (
+      <div key={consultant.name} className="text-center">
+        <img
+          src={consultant.photo}
+          alt={consultant.name}
+          className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+        />
+        <h4 className="font-bold text-[#1B4332] text-lg">{consultant.name}</h4>
+        <p className="text-[#F97316] text-sm font-medium mb-2">{consultant.role}</p>
+        <p className="text-gray-600 text-sm">{consultant.bio}</p>
+      </div>
+    ))
+  )}
+</div>
         </div>
       </section>
 
@@ -316,18 +378,28 @@ const EventDetails = () => {
             Para Quem é Este Encontro?
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              'Proprietários de bares',
-              'Proprietários de restaurantes',
-              'Gestores do setor',
-              'Empreendedores do setor alimentício',
-              'Associados Abrasel RN',
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3">
-                <CheckCircle className="w-5 h-5 text-[#F97316] flex-shrink-0" />
-                <span className="text-white text-sm font-medium">{item}</span>
-              </div>
-            ))}
+       
+{(event.id === 'setembro' && activeDay === 1
+  ? [
+      'Proprietários de bares e restaurantes',
+      'Gestores e líderes do setor',
+      'Profissionais responsáveis pela operação',
+      'Profissionais de marketing e vendas',
+      'Empresários que desejam aplicar IA no negócio',
+    ]
+  : [
+      'Proprietários de bares',
+      'Proprietários de restaurantes',
+      'Gestores do setor',
+      'Empreendedores do setor alimentício',
+      'Associados Abrasel RN',
+    ]
+).map((item) => (
+  <div key={item} className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3">
+    <CheckCircle className="w-5 h-5 text-[#F72585] flex-shrink-0" />
+    <span className="text-white text-sm font-medium">{item}</span>
+  </div>
+))}
           </div>
         </div>
       </section>
@@ -339,16 +411,26 @@ const EventDetails = () => {
             Programação
           </h2>
           <div className="space-y-0">
-            {event.schedule.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-4 py-4 border-b border-gray-100 last:border-0"
-              >
-                <div className="w-16 text-[#F97316] font-bold text-sm">{item.time}</div>
-                <div className="w-3 h-3 rounded-full bg-[#1B4332] flex-shrink-0" />
-                <div className="text-gray-700">{item.activity}</div>
-              </div>
-            ))}
+           {(event.id === 'setembro' && activeDay === 1
+  ? [
+      { time: '14h30', activity: 'Credenciamento e networking' },
+      { time: '15h00–15h20', activity: 'O RESTAURANTE REAL — Principais dores, gargalos e oportunidades onde a IA pode ajudar.' },
+      { time: '15h20–15h50', activity: 'VEJA A IA TRABALHAR — Demonstração dos dois assistentes utilizando situações reais de restaurantes.' },
+      { time: '15h50–16h40', activity: 'MÃO NA MASSA — Aplicação da IA a um problema real do próprio restaurante, com acompanhamento dos facilitadores.' },
+      { time: '16h40–16h55', activity: 'DESAFIO — Uso da IA para produzir uma solução prática para o negócio.' },
+      { time: '16h55–17h00', activity: 'ENTREGA — Acesso aos assistentes utilizados na oficina para continuar experimentando e aplicando a IA após o evento.' },
+    ]
+  : event.schedule
+).map((item, index) => (
+  <div
+    key={index}
+    className="flex items-start gap-4 py-4 border-b border-gray-100 last:border-0"
+  >
+    <div className="w-24 text-[#F72585] font-bold text-sm flex-shrink-0">{item.time}</div>
+    <div className="w-3 h-3 rounded-full bg-[#1B4332] flex-shrink-0 mt-1.5" />
+    <div className="text-gray-700">{item.activity}</div>
+  </div>
+))}
           </div>
         </div>
       </section>

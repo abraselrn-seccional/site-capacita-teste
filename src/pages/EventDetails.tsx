@@ -417,7 +417,11 @@ const EventDetails = () => {
      <section className="py-16 bg-white">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-2xl md:text-3xl font-bold text-[#1B4332] uppercase mb-8">
-      {event.id === 'setembro' && activeDay === 2 ? 'Especialistas' : 'Consultor'}
+     {event.id === 'setembro'
+  ? activeDay === 2
+    ? 'Especialistas'
+    : 'Especialista'
+  : 'Consultor'}
     </h2>
 
     {event.id === 'setembro' && activeDay === 1 ? (
@@ -592,7 +596,7 @@ const EventDetails = () => {
           </div>
         </div>
       </section>
-  {event.id === 'setembro' && activeDay === 1 && (
+  {event.id === 'setembro' && (
   <section className="bg-white pb-8">
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border border-[#F72585]/30 bg-[#F72585]/5 rounded-xl px-6 py-5">
@@ -603,7 +607,9 @@ const EventDetails = () => {
     : 'Quer rever o conteúdo do Dia 1?'}
 </p>
           <p className="text-gray-600 text-sm">
-            Clique na aba acima e conheça a programação completa do próximo encontro.
+            {activeDay === 1
+  ? 'Clique na aba acima e conheça a programação completa do próximo encontro.'
+  : 'Clique para rever a programação completa do Dia 1.'}
           </p>
         </div>
 

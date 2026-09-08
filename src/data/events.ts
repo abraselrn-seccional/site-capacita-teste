@@ -324,7 +324,7 @@ export const faqData = [
   },
   {
     question: 'Onde será realizado o evento?',
-    answer: 'O evento será no Sebrae RN.',
+    answer: 'O evento será realizado no Centro de Convenções de Natal, durante o GO! RN.',
   },
 ];
 

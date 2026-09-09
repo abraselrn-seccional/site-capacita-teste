@@ -477,11 +477,11 @@ const EventDetails = () => {
           />
 
           <h4 className="font-bold text-[#1B4332] text-xl">
-            Soft3 Tecnologia
+            Victor Luz
           </h4>
 
           <p className="text-[#F72585] text-sm font-semibold mb-3">
-            Cloudfy ERP
+            Soft3 Tecnologia
           </p>
 
           <p className="text-gray-600 text-sm leading-relaxed">

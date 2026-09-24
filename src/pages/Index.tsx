@@ -194,7 +194,7 @@ const Index = () => {
                   className="absolute -top-1 -right-2 z-30 w-16 h-auto"
                   />
                 )}
-                <div className={`px-5 py-3 rounded-t-xl ${event.id === 'Outubro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
+                <div className={`px-5 py-3 rounded-t-xl ${event.id === 'outubro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
                   <h4 className="text-white font-bold text-sm uppercase tracking-wide">{event.month}</h4>
                   </div>
                 <div className="p-5">

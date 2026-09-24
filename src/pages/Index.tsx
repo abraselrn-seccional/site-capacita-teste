@@ -194,7 +194,7 @@ const Index = () => {
                   className="absolute -top-1 -right-2 z-30 w-16 h-auto"
                   />
                 )}
-                <div className={`px-5 py-3 rounded-t-xl ${event.id === 'setembro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
+                <div className={`px-5 py-3 rounded-t-xl ${event.id === 'Outubro' ? 'bg-[#1B4332]' : 'bg-[#737373]'}`}>
                   <h4 className="text-white font-bold text-sm uppercase tracking-wide">{event.month}</h4>
                   </div>
                 <div className="p-5">
@@ -212,21 +212,17 @@ const Index = () => {
                   </div>
                   <span
                     className={`text-xs font-bold uppercase px-2 py-1 rounded-full whitespace-nowrap ${
-                          event.id === 'junho' || event.id === 'julho' || event.id === 'agosto'
-                             ? 'bg-red-100 text-red-700'
-                             :  event.id === 'setembro'
-                             ? 'bg-green-100 text-green-700'
-                             : 'bg-orange-100 text-orange-700'
-                    }`}
-                  >
-                    {event.id === 'junho' || event.id === 'julho' || event.id === 'agosto'
-                        ? 'Inscrições Encerradas'
-                        : event.id === 'setembro'
-                        ? 'Inscrições Abertas'
-                        : 'Em Breve'}
+                          event.id === 'junho' || event.id === 'julho' || event.id === 'agosto' || event.id === 'setembro'
+  ? 'bg-red-100 text-red-700'
+  : 'bg-orange-100 text-orange-700'
+}`}
+>
+  {event.id === 'junho' || event.id === 'julho' || event.id === 'agosto' || event.id === 'setembro'
+    ? 'Inscrições Encerradas'
+    : 'Em Breve'}
                   </span>
-                 
-                {event.id === 'junho' || event.id === 'julho' || event.id === 'agosto' ? (
+
+                  {event.id === 'junho' || event.id === 'julho' || event.id === 'agosto' || event.id === 'setembro' ? (
                     <span className="mt-4 flex items-center gap-1 text-gray-400 font-semibold text-sm">
                     Evento Encerrado
                  </span>

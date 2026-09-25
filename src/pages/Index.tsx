@@ -156,7 +156,7 @@ const Index = () => {
                   <img
                     src="/assets/fotocapacita.png"
                     alt="Próximo evento"
-                    className="rounded-xl shadow-lg w-full object-cover aspect-video"
+                    className="rounded-xl shadow-lg w-full max-h-[520px] object-contain"
                   />
                 </div>
               </div>

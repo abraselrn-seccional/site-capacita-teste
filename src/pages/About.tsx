@@ -38,7 +38,7 @@ const About = () => {
       <section className="relative pt-20 bg-[#1B4332]">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2eycqcaieq/abrasel-networking-training-event.png"
+            src="/assets/capa-conheca-abrasel.png"
             alt=""
             className="w-full h-full object-cover"
           />

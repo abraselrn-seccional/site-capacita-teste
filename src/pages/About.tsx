@@ -114,7 +114,7 @@ const About = () => {
             </div>
             <div>
               <img
-                src="/assets/pagina-conheca-abrasel.png"
+                src="/assets/pagina-conheca-abrasel.png.png"
                 alt="Networking Abrasel"
                 className="rounded-xl shadow-lg w-full object-cover aspect-video"
               />

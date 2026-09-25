@@ -154,7 +154,7 @@ const Index = () => {
                 </div>
                 <div className="hidden md:block">
                   <img
-                    src="/assets/home-evento.jpg.png"
+                    src="/assets/fotocapacita.png"
                     alt="Próximo evento"
                     className="rounded-xl shadow-lg w-full object-cover aspect-video"
                   />

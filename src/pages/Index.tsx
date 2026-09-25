@@ -152,11 +152,11 @@ const Index = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden md:block rounded-[20px] overflow-hidden shadow-lg max-w-[540px] mx-auto">
                   <img
                     src="/assets/fotocapacita.png"
                     alt="Próximo evento"
-                    className="w-full max-w-[540px] max-h-[540px] object-contain mx-auto rounded-[20px] shadow-lg"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </div>

@@ -116,7 +116,7 @@ const About = () => {
               <img
                 src="/assets/pagina-conheca-abrasel.png.png"
                 alt="Networking Abrasel"
-                className="rounded-xl shadow-lg w-full object-cover aspect-video"
+                className="rounded-xl shadow-lg w-full max-w-[500px] mx-auto object-cover"
               />
             </div>
           </div>

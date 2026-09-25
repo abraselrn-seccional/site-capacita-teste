@@ -114,7 +114,7 @@ const About = () => {
             </div>
             <div>
               <img
-                src="https://mgx-backend-cdn.metadl.com/generate/images/1338573/2026-06-22/ra2eycqcaieq/abrasel-networking-training-event.png"
+                src="/assets/pagina-conheca-abrasel.png"
                 alt="Networking Abrasel"
                 className="rounded-xl shadow-lg w-full object-cover aspect-video"
               />

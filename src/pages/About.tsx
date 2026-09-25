@@ -36,7 +36,7 @@ const About = () => {
 
       {/* Hero */}
       <section className="relative pt-20 bg-[#1B4332]">
-        <div className="absolute inset-0 opacity-50">
+        <div className="absolute inset-0 opacity-55">
           <img
             src="/assets/capa-conheca-abrasel.png"
             alt=""

@@ -36,14 +36,14 @@ const About = () => {
 
       {/* Hero */}
       <section className="relative pt-20 bg-[#1B4332]">
-        <div className="absolute inset-0 opacity-55">
+        <div className="absolute inset-0 opacity-45">
           <img
             src="/assets/capa-conheca-abrasel.png"
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-[#1B4332]/53" />
+        <div className="absolute inset-0 bg-[#1B4332]/70" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-4">

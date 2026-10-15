@@ -207,45 +207,39 @@ const EventDetails = () => {
 >
   {/* Camada verde transparente */}
  <div className="absolute inset-0 bg-[#004D3A]/85"></div>
-
-  <div className="absolute top-32 right-0 z-[5] flex flex-col gap-3 items-end">
-    <div className="w-20 h-3 bg-[#00AEEF] rounded-full rotate-[-45deg] translate-x-6"></div>
-<div className="w-24 h-3 bg-[#F72585] rounded-full rotate-[-45deg] translate-x-3"></div>
-<div className="w-16 h-3 bg-[#FFB000] rounded-full rotate-[-45deg] translate-x-8"></div>
-</div>
-  <div className="absolute top-24 right-0 z-[3] hidden md:block">
-  <div className="w-80 h-36 border-t-2 border-r-2 border-[#F72585] rounded-tr-[120px] opacity-80"></div>
-  <div className="w-72 h-32 border-t-2 border-r-2 border-[#F72585] rounded-tr-[110px] opacity-70 -mt-24 ml-8"></div>
-  <div className="w-64 h-28 border-t-2 border-r-2 border-[#F72585] rounded-tr-[100px] opacity-60 -mt-20 ml-16"></div>
-</div>
-  {/* Traços coloridos - canto inferior direito */}
-<div className="absolute bottom-12 right-5 z-[5] hidden md:flex gap-3 items-end">
-  <div className="w-16 h-4 bg-[#00AEEF] rounded-full rotate-[-45deg]"></div>
-  <div className="w-16 h-4 bg-[#F72585] rounded-full rotate-[-45deg]"></div>
-</div>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
-      
-     <div className="flex items-center gap-3 mb-4">
-  <span className="text-white text-sm md:text-base font-bold uppercase tracking-wide">
-    ABRASEL CAPACITA
-  </span>
+      <div className="mb-8">
+  <div className="flex items-center gap-3 mb-2">
+    <span className="w-14 h-2 bg-[#F97316] rounded-full"></span>
+    <span className="text-white text-xl md:text-2xl font-medium">
+      ABRASEL
+    </span>
+  </div>
 
-  <span className="bg-[#F72585] text-white text-xs font-bold uppercase px-3 py-1.5 rounded-full">
-    EDIÇÃO ESPECIAL
-  </span>
+  <h1 className="text-5xl md:text-7xl font-black text-white leading-none tracking-tight">
+    CAPACITA
+  </h1>
 </div>
+<div className="mb-8 space-y-5">
+  <div>
+    <span className="text-[#F97316] text-xs font-bold uppercase tracking-wider">
+      PALESTRA 1
+    </span>
+    <h2 className="text-xl md:text-2xl font-bold text-white leading-tight mt-1">
+      Do Instagram à mesa: como transformar seguidores em clientes
+    </h2>
+  </div>
 
-<img
-  src="/assets/logo-go-rn.png"
-  alt="GO! RN"
-  className="w-40 md:w-52 h-auto mb-6"
-/>
-
-      <p className="text-white/90 text-lg md:text-xl font-medium mb-8">
-        Dois dias de conteúdo, inovação e conhecimento para o setor de alimentação fora do lar.
-      </p>
-
+  <div>
+    <span className="text-[#F97316] text-xs font-bold uppercase tracking-wider">
+      PALESTRA 2
+    </span>
+    <h2 className="text-xl md:text-2xl font-bold text-white leading-tight mt-1">
+      Restaurante organizado: processos que fazem a operação funcionar melhor
+    </h2>
+  </div>
+</div>
       <div className="space-y-3 mb-8">
         <div className="flex items-center gap-3 text-white">
           <Calendar className="w-5 h-5 text-[#F97316]" />

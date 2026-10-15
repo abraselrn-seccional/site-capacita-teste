@@ -203,7 +203,7 @@ const EventDetails = () => {
 {/* Hero */}
 <section
   className="relative pt-20 bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/assets/fundo-go-rn.jpg')" }}
+  style={{ backgroundImage: "url('/assets/capa-proximo evento.png')" }}
 >
   {/* Camada verde transparente */}
  <div className="absolute inset-0 bg-[#004D3A]/85"></div>

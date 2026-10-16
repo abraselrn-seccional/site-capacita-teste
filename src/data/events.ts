@@ -255,7 +255,12 @@ registrationLink: '#',
   'A importância de organizar processos e rotinas dentro da sua empresa.',
   'Como identificar falhas operacionais e oportunidades de melhoria.',
   'Boas práticas para tornar a operação mais organizada, eficiente e produtiva.',],
-    consultants: [],
+    consultants: [ {
+    name: 'Tales Gouveia',
+    role: 'Especialista em gestão de restaurantes',
+    photo: '/assets/consultants/logo operata.png',
+    bio: '',
+  },],
     schedule: [],
     partners: [
       { name: '', logo: '' },

@@ -206,7 +206,7 @@ const EventDetails = () => {
   style={{ backgroundImage: "url('/assets/capa-proximo evento.png')" }}
 >
   {/* Camada verde transparente */}
- <div className="absolute inset-0 bg-gradient-to-r from-[#003D2E]/95 via-[#004D3A]/75 to-transparent"></div>
+ <div className="absolute inset-0 bg-gradient-to-r from-[#003D2E]/95 via-[#004D3A]/80 to-[#004D3A]/45"></div>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
       <div className="mb-8">
@@ -277,7 +277,15 @@ const EventDetails = () => {
           EVENTO EXCLUSIVO PARA ASSOCIADOS ABRASEL
         </span>
       </div>
-
+<a
+  href={REGISTRATION_LINK}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-2 w-fit mt-6 bg-[#F97316] hover:bg-[#ea580c] text-white font-bold px-8 py-4 rounded-lg shadow-lg transition-all"
+>
+  QUERO ME INSCREVER
+  <ArrowRight className="w-5 h-5" />
+</a>
     </div>
   </div>
 </section>

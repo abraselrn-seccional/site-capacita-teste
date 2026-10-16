@@ -221,7 +221,8 @@ const EventDetails = () => {
     CAPACITA
   </h1>
 </div>
-<div className="mb-8 space-y-5">
+{event.id === 'outubro' && (
+  <div className="mb-8 space-y-5">
   <div>
     <span className="text-[#F97316] text-xs font-bold uppercase tracking-wider">
       PALESTRA 1
@@ -240,20 +241,33 @@ const EventDetails = () => {
     </h2>
   </div>
 </div>
+  )}
       <div className="space-y-3 mb-8">
         <div className="flex items-center gap-3 text-white">
           <Calendar className="w-5 h-5 text-[#F97316]" />
-          <span className="font-medium">18 e 19 de setembro de 2026</span>
+          <span className="font-medium">
+  {event.id === 'outubro'
+    ? '26 de outubro de 2026'
+    : '18 e 19 de setembro de 2026'}
+</span>
         </div>
 
         <div className="flex items-center gap-3 text-white">
           <Clock className="w-5 h-5 text-[#F97316]" />
-          <span>18/09 | 15h às 17h &nbsp; • &nbsp; 19/09 | 13h às 15h</span>
+          <span>
+  {event.id === 'outubro'
+    ? '18h30'
+    : '18/09 | 15h às 17h • 19/09 | 13h às 15h'}
+</span>
         </div>
 
         <div className="flex items-center gap-3 text-white">
           <MapPin className="w-5 h-5 text-[#F97316]" />
-          <span>Centro de Convenções de Natal</span>
+          <span>
+  {event.id === 'outubro'
+    ? 'Sebrae RN - Sala 4'
+    : 'Centro de Convenções de Natal'}
+</span>
         </div>
       </div>
 

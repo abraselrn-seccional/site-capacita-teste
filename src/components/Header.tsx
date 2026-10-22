@@ -8,7 +8,7 @@ const Header = () => {
 
   const navLinks = [
     { label: 'Início', path: '/' },
-    { label: 'Próximo Evento', path: '/evento/outubro'},
+    { label: 'Próximo Evento', path: '/evento/novembro'},
     { label: 'Conheça a Abrasel', path: '/sobre' },
     { label: 'Seja um Parceiro', path: '/parceiros' },
   ];

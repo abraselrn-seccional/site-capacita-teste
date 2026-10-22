@@ -244,10 +244,9 @@ registrationLink: '#',
     location: 'A definir',
     locationDetail: '',
     status: 'published',
-    themes: [
-      { title: 'Em breve' },
-      { title: 'Em breve' },
-    ],
+   themes: [
+  { title: 'Escala 5x2 em xeque: o que muda para bares e restaurantes?' },
+],
     about:'O Abrasel Capacita de outubro reúne duas palestras voltadas ao crescimento e à organização dos negócios de alimentação fora do lar.\n\nNa palestra "Do Instagram à mesa: como transformar seguidores em clientes", os participantes conhecerão estratégias para utilizar as redes sociais como ferramenta de atração de clientes e geração de oportunidades de vendas.\n\nJá na palestra "Restaurante organizado: processos que fazem a operação funcionar melhor", o foco será a importância de estruturar processos e organizar as rotinas para tornar a operação mais eficiente.\n\nUm encontro para compartilhar conhecimentos e fortalecer a gestão de bares e restaurantes.',
     learningTopics: ['Como utilizar o Instagram para atrair novos clientes para o restaurante.',
   'Estratégias para transformar seguidores em clientes e gerar mais oportunidades de vendas.',

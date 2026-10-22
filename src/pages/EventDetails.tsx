@@ -206,7 +206,7 @@ const EventDetails = () => {
   style={{ backgroundImage: "url('/assets/capa-proximo evento.png')" }}
 >
   {/* Camada verde transparente */}
- <div className="absolute inset-0 bg-gradient-to-r from-[#003D2E]/95 via-[#004D3A]/80 to-[#004D3A]/45"></div>
+ <div className="absolute inset-0 bg-gradient-to-r from-[#003D2E] via-[#003D2E]/90 to-[#004D3A]/30"></div>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <div className="max-w-4xl">
       <div className="mb-8">
@@ -221,7 +221,7 @@ const EventDetails = () => {
     CAPACITA
   </h1>
 </div>
-{event.id === 'outubro' && (
+{event.id === 'novembro' && (
   <div className="mb-8 space-y-5">
   <div>
     <span className="text-[#F97316] text-xs font-bold uppercase tracking-wider">

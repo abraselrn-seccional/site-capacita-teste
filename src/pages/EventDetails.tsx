@@ -255,18 +255,18 @@ const EventDetails = () => {
         <div className="flex items-center gap-3 text-white">
           <Clock className="w-5 h-5 text-[#F97316]" />
           <span>
-  {event.id === 'outubro'
-    ? '18h30'
-    : '18/09 | 15h às 17h • 19/09 | 13h às 15h'}
+  {event.id === 'novembro'
+  ? '18h30'
+  : '18/09 | 15h às 17h • 19/09 | 13h às 15h'}
 </span>
         </div>
 
         <div className="flex items-center gap-3 text-white">
           <MapPin className="w-5 h-5 text-[#F97316]" />
           <span>
-  {event.id === 'outubro'
-    ? 'Sebrae RN - Sala 4'
-    : 'Centro de Convenções de Natal'}
+ {event.id === 'novembro'
+  ? 'Sebrae RN - Sala 5'
+  : 'Centro de Convenções de Natal'}
 </span>
         </div>
       </div>

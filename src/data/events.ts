@@ -276,7 +276,7 @@ registrationLink: '#',
     time: 'A definir',
     location: 'A definir',
     locationDetail: '',
-    status: 'coming_soon',
+    status: 'published',
     themes: [
       { title: 'Em breve' },
       { title: 'Em breve' },

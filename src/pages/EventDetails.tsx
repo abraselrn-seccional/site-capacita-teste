@@ -246,9 +246,9 @@ const EventDetails = () => {
         <div className="flex items-center gap-3 text-white">
           <Calendar className="w-5 h-5 text-[#F97316]" />
           <span className="font-medium">
-  {event.id === 'outubro'
-    ? '26 de outubro de 2026'
-    : '18 e 19 de setembro de 2026'}
+  {event.id === 'novembro'
+  ? '30 de novembro de 2026'
+  : '18 e 19 de setembro de 2026'}
 </span>
         </div>
 

@@ -261,11 +261,17 @@ registrationLink: '#',
     bio: '',
   },],
     schedule: [],
-    partners: [
-      { name: '', logo: '' },
-      { name: '', logo: '' },
-    ],
-    partnerStatus: '2_available',
+   partners: [
+  {
+    name: 'Grupo Métodos',
+    logo: '/assets/consultants/grupo-metodo.png',
+  },
+  {
+    name: 'Morquecho e Coque',
+    logo: '/assets/morquecho e coque.PNG',
+  },
+],
+partnerStatus: 'filled',
     registrationLink: '#',
   },
   {

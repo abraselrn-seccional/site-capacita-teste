@@ -459,7 +459,7 @@ const EventDetails = () => {
   : event.learningTopics
 ).map((topic, index) => (
   <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg border border-gray-100">
-    <CheckCircle className="w-5 h-5 text-[#F72585] flex-shrink-0 mt-0.5" />
+    <CheckCircle className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
     <span className="text-gray-700">{topic}</span>
   </div>
 ))}
@@ -595,9 +595,9 @@ const EventDetails = () => {
     ]
 ).map((item) => (
   <div key={item} className="flex flex-col items-center justify-center text-center gap-3 bg-white/5 rounded-xl px-4 py-5">
-  <div className="w-10 h-10 rounded-full bg-[#F72585]/15 flex items-center justify-center">
+  <div className="w-10 h-10 rounded-full bg-[#F97316]/15 flex items-center justify-center">
     {item.includes('bares e restaurantes') ? (
-  <Users className="w-6 h-6 text-[#F72585]" />
+  <Users className="w-6 h-6 text-[#F97316]" />
 ) : item.includes('Gestores') ? (
   <TrendingUp className="w-6 h-6 text-[#F72585]" />
 ) : item.includes('operação') ? (
@@ -693,7 +693,7 @@ const EventDetails = () => {
 ).map((benefit) => (
               <div key={benefit.title} className="bg-white p-6 rounded-xl border border-gray-100 flex items-start gap-4">
                 <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
-  <benefit.icon className="w-8 h-8 text-[#F72585]" />
+  <benefit.icon className="w-8 h-8 text-[#F97316]" />
 </div>
                 <div>
                   <h4 className="font-bold text-[#1B4332] mb-1">{benefit.title}</h4>

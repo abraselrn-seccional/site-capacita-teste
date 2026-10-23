@@ -599,11 +599,11 @@ const EventDetails = () => {
     {item.includes('bares e restaurantes') ? (
   <Users className="w-6 h-6 text-[#F97316]" />
 ) : item.includes('Gestores') ? (
-  <TrendingUp className="w-6 h-6 text-[#F72585]" />
+  <TrendingUp className="w-6 h-6 text-[#F97316]" />
 ) : item.includes('operação') ? (
-  <BookOpen className="w-6 h-6 text-[#F72585]" />
+  <BookOpen className="w-6 h-6 text-[#F97316]" />
 ) : (
-  <Lightbulb className="w-6 h-6 text-[#F72585]" />
+  <Lightbulb className="w-6 h-6 text-[#F97316]" />
 )}
   </div>
   <span className="text-white text-sm font-medium leading-snug">{item}</span>

@@ -773,24 +773,12 @@ const EventDetails = () => {
             </div>
           </div>
 
-          {/* WhatsApp CTA */}
-          <div className="mt-8 text-center">
-            <a
-              href={`${WHATSAPP_LINKS.relacionamento}?text=${encodeURIComponent(WHATSAPP_MESSAGES.falarAbrasel)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#1B4332] font-bold px-8 py-4 rounded-lg text-base transition-all"
-            >
-              <MessageCircle className="w-5 h-5" />
-              FALAR COM A ABRASEL
-            </a>
-          </div>
         </div>
       </section>
 <div className="bg-white py-8 text-center">
   <Link
     to="/"
-    className="inline-flex items-center gap-2 text-[#1B4332] font-semibold hover:text-[#F72585] transition-colors"
+    className="inline-flex items-center gap-2 text-[#1B4332] font-semibold hover:text-[#F97316] transition-colors"
   >
     <ArrowLeft className="w-4 h-4" />
     Voltar para a página inicial

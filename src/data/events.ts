@@ -292,30 +292,6 @@ registrationLink: '#',
     partnerStatus: '2_available',
     registrationLink: '#',
   },
-  {
-    id: 'dezembro',
-    month: 'Dezembro',
-    date: '15/12',
-    dayOfWeek: 'TERÇA-FEIRA',
-    time: 'A definir',
-    location: 'A definir',
-    locationDetail: '',
-    status: 'coming_soon',
-    themes: [
-      { title: 'Em breve' },
-      { title: 'Em breve' },
-    ],
-    about: '',
-    learningTopics: [],
-    consultants: [],
-    schedule: [],
-    partners: [
-      { name: '', logo: '' },
-      { name: '', logo: '' },
-    ],
-    partnerStatus: '2_available',
-    registrationLink: '#',
-  },
 ];
 
 export const faqData = [

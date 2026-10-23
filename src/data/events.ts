@@ -263,11 +263,11 @@ registrationLink: '#',
     schedule: [],
    partners: [
   {
-    name: 'Grupo Métodos',
+    name: 'Grupo Métodos\nContabilidade e soluções empresariais',
     logo: '/assets/consultants/grupo-metodo.png',
   },
   {
-    name: 'Morquecho e Coque',
+    name: name: 'Morquecho e Coque\nAdvocacia e consultoria jurídica',
     logo: '/assets/morquecho e coque.PNG',
   },
 ],

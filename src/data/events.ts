@@ -271,7 +271,7 @@ registrationLink: '#',
     logo: '/assets/morquecho e coque.PNG',
   },
 ],
-partnerStatus: 'filled',
+partnerStatus: 'closed',
     registrationLink: '#',
   },
   {

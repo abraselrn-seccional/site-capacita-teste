@@ -128,8 +128,8 @@ const Index = () => {
                     <div className="flex items-center gap-3 text-gray-700">
                       <Users className="w-5 h-5 text-[#F97316]" />
                       <div className="font-medium space-y-1">
-                        <div>Tales Gouveia</div>
                         <div>Thiago Barretto</div>
+                        <div>Tales Gouveia</div>
                       </div>
                     </div>
                   </div>

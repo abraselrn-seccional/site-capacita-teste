@@ -267,7 +267,7 @@ registrationLink: '#',
     logo: '/assets/consultants/grupo-metodo.png',
   },
   {
-    name: name: 'Morquecho e Coque\nAdvocacia e consultoria jurídica',
+    name: 'Morquecho e Coque\nAdvocacia e consultoria jurídica',
     logo: '/assets/morquecho e coque.PNG',
   },
 ],

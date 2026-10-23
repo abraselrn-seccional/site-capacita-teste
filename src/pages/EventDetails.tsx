@@ -642,7 +642,7 @@ const EventDetails = () => {
     key={index}
     className="flex items-start gap-4 py-4 border-b border-gray-100 last:border-0"
   >
-    <div className="w-24 text-[#F72585] font-bold text-sm flex-shrink-0">{item.time}</div>
+    <div className="w-24 text-[#F97316] font-bold text-sm flex-shrink-0">{item.time}</div>
     <div className="w-3 h-3 rounded-full bg-[#1B4332] flex-shrink-0 mt-1.5" />
     <div className="text-gray-700">{item.activity}</div>
   </div>

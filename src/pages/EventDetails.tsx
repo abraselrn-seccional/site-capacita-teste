@@ -378,19 +378,57 @@ const EventDetails = () => {
             Sobre o Encontro
           </h2>
           <div className="space-y-4">
-       {event.id === 'setembro' && activeDay === 1 ? (
+    
+{event.id === 'novembro' ? (
+  <>
+    <p className="text-gray-600 leading-relaxed text-base">
+      O Abrasel Capacita de novembro traz dois temas essenciais para
+      quem deseja atrair mais clientes e melhorar os resultados do
+      seu negócio.
+    </p>
+
+    <p className="text-gray-600 leading-relaxed text-base">
+      Neste encontro, vamos explorar como transformar o Instagram
+      em uma ferramenta estratégica de vendas e como a organização
+      de processos pode tornar a operação de bares e restaurantes
+      mais eficiente.
+    </p>
+
+    <p className="text-gray-600 leading-relaxed text-base">
+      Com uma abordagem prática e exemplos do dia a dia, a edição
+      vai conectar marketing e gestão para ajudar empresários a
+      vender melhor, organizar suas equipes e fortalecer seus negócios.
+    </p>
+  </>
+) : event.id === 'setembro' && activeDay === 1 ? (
   <p className="text-gray-600 leading-relaxed text-base">
-    Oficina prática de 2 horas voltada para empresários e profissionais do setor de restaurantes, mostrando como aplicar Inteligência Artificial para resolver problemas reais do dia a dia. Durante a atividade, os participantes irão experimentar assistentes de IA desenvolvidos para apoiar a operação e o crescimento dos negócios, com aplicações em ficha técnica, custos, padronização, marketing, clientes e vendas.
+    Oficina prática de 2 horas voltada para empresários e profissionais
+    do setor de restaurantes, mostrando como aplicar Inteligência
+    Artificial para resolver problemas reais do dia a dia. Durante
+    a atividade, os participantes irão experimentar assistentes de IA
+    desenvolvidos para apoiar a operação e o crescimento dos negócios,
+    com aplicações em ficha técnica, custos, padronização, marketing,
+    clientes e vendas.
   </p>
 ) : event.id === 'setembro' && activeDay === 2 ? (
   <p className="text-gray-600 leading-relaxed text-base">
-    Uma capacitação prática para ajudar empresários a entender os impactos da Reforma Tributária e começar a preparar seus negócios para as mudanças. Na primeira etapa, a Cruz – Assessoria Empresarial apresenta as principais mudanças da Reforma Tributária sobre o consumo e seus impactos nas rotinas fiscais e empresariais. Na segunda, a Soft3 leva o conteúdo para a prática, mostrando como essas mudanças chegam ao cadastro de produtos, ao preenchimento fiscal e à tributação dentro de um sistema de gestão.
+    Uma capacitação prática para ajudar empresários a entender os
+    impactos da Reforma Tributária e começar a preparar seus negócios
+    para as mudanças. Na primeira etapa, a Cruz – Assessoria Empresarial
+    apresenta as principais mudanças da Reforma Tributária sobre
+    o consumo e seus impactos nas rotinas fiscais e empresariais.
+    Na segunda, a Soft3 leva o conteúdo para a prática, mostrando
+    como essas mudanças chegam ao cadastro de produtos, ao
+    preenchimento fiscal e à tributação dentro de um sistema de gestão.
   </p>
 ) : (
   event.about.split('\n\n').map((paragraph, i) => (
-    <p key={i} className="text-gray-600 leading-relaxed text-base">{paragraph}</p>
+    <p key={i} className="text-gray-600 leading-relaxed text-base">
+      {paragraph}
+    </p>
   ))
 )}
+
           </div>
         </div>
       </section>

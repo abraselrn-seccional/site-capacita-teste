@@ -268,7 +268,7 @@ registrationLink: '#',
   },
   {
     name: 'Morquecho e Coque\nAdvocacia e consultoria jurídica',
-    logo: '/ativos/consultores/morquecho-coque.png.PNG',
+    logo: '/assets/consultants/morquecho-coque.png.PNG',
   },
 ],
 partnerStatus: 'closed',

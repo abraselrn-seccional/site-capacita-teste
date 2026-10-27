@@ -475,7 +475,7 @@ const EventDetails = () => {
   ? activeDay === 2
     ? 'Especialistas'
     : 'Especialista'
-  : 'Consultor'}
+  : 'Especialistas'}
     </h2>
 
     {event.id === 'setembro' && activeDay === 1 ? (

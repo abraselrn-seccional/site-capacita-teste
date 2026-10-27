@@ -277,11 +277,11 @@ partnerStatus: 'closed',
   {
     id: 'novembro',
     month: 'Novembro',
-    date: '30/11',
+    date: '23/11',
     dayOfWeek: 'SEGUNDA-FEIRA',
         time: '18h30',
     location: 'Sebrae RN',
-    locationDetail: 'Sala 5',
+    locationDetail: 'salão de eventos',
     status: 'published',
     themes: [
       { title: 'Do Instagram à mesa: como transformar seguidores em clientes' },

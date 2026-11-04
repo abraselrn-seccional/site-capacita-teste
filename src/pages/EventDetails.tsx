@@ -545,20 +545,34 @@ const EventDetails = () => {
 
       </div>
     ) : (
-      <div className="flex justify-center">
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 max-w-3xl mx-auto">
         {event.consultants.map((consultant) => (
-          <div key={consultant.name} className="text-center">
-            <img
-              src={consultant.photo}
-              alt={consultant.name}
-              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
-            />
-            <h4 className="font-bold text-[#1B4332] text-lg">{consultant.name}</h4>
-            <p className="text-[#F97316] text-sm font-medium mb-2">{consultant.role}</p>
-            <p className="text-gray-600 text-sm">{consultant.bio}</p>
+          <div key={consultant.name} className="text-center flex flex-col items-center">
+            <div className="w-40 h-40 rounded-full mx-auto mb-5 overflow-hidden shadow-lg bg-white flex items-center justify-center">
+              <img
+                src={consultant.photo}
+                alt={consultant.name}
+                className={`w-full h-full ${
+                  consultant.name === 'Thiago Barretto'
+                    ? 'object-contain scale-125'
+                    : 'object-cover'
+                }`}
+              />
+            </div>
+            <h4 className="font-bold text-[#1B4332] text-lg mb-2">
+              {consultant.name}
+            </h4>
+            <p className="text-[#F97316] text-sm font-medium leading-relaxed max-w-xs mx-auto">
+              {consultant.role}
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto mt-2">
+              {consultant.bio}
+            </p>
           </div>
         ))}
       </div>
+
     )}
   </div>
 </section>

@@ -549,7 +549,7 @@ const EventDetails = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 max-w-3xl mx-auto">
         {event.consultants.map((consultant) => (
           <div key={consultant.name} className="text-center flex flex-col items-center">
-          <div className="w-40 h-40 rounded-full mx-auto mb-5 overflow-hidden shadow-lg bg-white border-2 border-[#1B4332] flex items-center justify-center">
+          <div className={`w-40 h-40 rounded-full mx-auto mb-5 overflow-hidden shadow-lg flex items-center justify-center ${consultant.name === 'Thiago Barretto' ? 'bg-white border-2 border-[#1B4332]' : 'bg-[#1B4332]'}`}>
               <img
                 src={consultant.photo}
                 alt={consultant.name}

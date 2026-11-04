@@ -321,11 +321,19 @@ partnerStatus: 'closed',
   { time: '19h50', activity: 'Momento de perguntas e esclarecimento de dúvidas' },
   { time: '20h00', activity: 'Encerramento' },
 ],
+  
     partners: [
-      { name: '', logo: '' },
-      { name: '', logo: '' },
+      {
+        name: 'Operata\nEspecialista em gestão de restaurantes',
+        logo: '/assets/consultants/logo operata.png',
+      },
+      {
+        name: 'Tastto\nEspecialista em marketing estratégico e performance para restaurantes',
+        logo: '/assets/consultants/logo-tastto.png',
+      },
     ],
-    partnerStatus: '2_available',
+
+    partnerStatus: 'closed',
     registrationLink: '#',
   },
 ];

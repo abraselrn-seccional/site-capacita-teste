@@ -555,7 +555,7 @@ const EventDetails = () => {
                 alt={consultant.name}
                 className={`w-full h-full ${
                   consultant.name === 'Thiago Barretto'
-                    ? 'object-contain scale-[1.8]'
+                ? 'object-contain scale-[1.8] translate-x-3'
                     : 'object-cover'
                 }`}
               />

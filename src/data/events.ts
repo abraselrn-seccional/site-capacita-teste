@@ -296,14 +296,22 @@ partnerStatus: 'closed',
       'Como identificar falhas operacionais e oportunidades de melhoria.',
       'Boas práticas para tornar a operação mais organizada, eficiente e produtiva.',
     ],
+ 
     consultants: [
       {
         name: 'Tales Gouveia',
-        role: 'Especialista em gestão de restaurantes',
+        role: 'Especialista em gestão de restaurantes.',
         photo: '/assets/consultants/logo operata.png',
         bio: '',
       },
+      {
+        name: 'Thiago Barretto',
+        role: 'Especialista em marketing estratégico e performance para restaurantes, fundador da Tastto e membro fundador de um clube de inteligência de dados do setor foodservice.',
+        photo: '/assets/consultants/logo-tastto.png',
+        bio: '',
+      },
     ],
+
     schedule: [
   { time: '18h00', activity: 'Credenciamento e networking' },
   { time: '18h30', activity: 'Abertura e apresentação do Abrasel Capacita' },

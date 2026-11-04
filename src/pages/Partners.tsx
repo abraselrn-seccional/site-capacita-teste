@@ -135,7 +135,7 @@ const Partners = () => {
                             <img
                               src={event.partners[1]?.logo}
                               alt={event.partners[1]?.name?.split('\n')[0] || 'Parceiro 2'}
-                              className="w-10 h-10 rounded-lg object-cover border-2 border-green-300"
+                             className={`w-10 h-10 rounded-lg border-2 border-green-300 ${event.id === 'novembro' ? 'object-contain scale-110' : 'object-cover'}`}
                             />
                             <div className="flex flex-col">
                               {event.partners[1]?.name?.split('\n').map((line, i) => (

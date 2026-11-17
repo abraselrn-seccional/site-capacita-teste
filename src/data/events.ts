@@ -39,7 +39,8 @@ export interface MonthEvent {
   registrationLink: string;
 }
 
-export const REGISTRATION_LINK = 'https://docs.google.com/forms/d/e/1FAIpQLSd-PcHgKxQ6tIpXqBw30ikjIzaqwoHDks-DqrwSEpWLyshb6g/viewform?usp=dialog';
+
+export const REGISTRATION_LINK = 'https://docs.google.com/forms/d/e/1FAIpQLScMEeePAw1wbsjMi93jTPkbfGXzmDo7Pf9RRQfyb2fWZd-_-g/viewform?usp=dialog';
 export const ASSOCIATION_CONTACT_LINK = 'https://wa.me/558499875257?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Abrasel%20e%20saber%20mais%20sobre%20os%20benef%C3%ADcios%20para%20associados.';
 export const PARTNER_FORM_LINK = 'https://docs.google.com/forms/d/e/1FAIpQLSeQKWM9dMphMusx54SG_DNBlsVOP3Bviz1YuJRfIW5d0zlF_A/viewform?usp=dialog';
 
